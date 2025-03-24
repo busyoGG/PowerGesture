@@ -1,0 +1,35 @@
+{
+    "name": "PowerGesture",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "鼠标手势",
+    "permissions": [
+        "tabs",
+        "storage",
+        "nativeMessaging",
+        "sessions",
+        "search",
+        "downloads"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "css/styles.css"
+            ],
+            "js": [
+                "scripts/content.js",
+                "scripts/fgActions.js"
+            ]
+        }
+    ]
+}

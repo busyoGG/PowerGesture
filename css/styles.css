@@ -1,0 +1,25 @@
+.power-gesture {
+    position: fixed;
+    x: 0px;
+    y: 0px;
+    z-index: 999999;
+    /* height: 100px;
+    width: 100px; */
+    pointer-events: none;
+    /* background-color: gray; */
+}
+
+.power-gesture-hint {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+    pointer-events: none;
+    color: black;
+    border-radius: 14px;
+    border: 2px solid gray;
+    backdrop-filter: blur(6px);
+    padding: 4px;
+    z-index: 999999;
+}
