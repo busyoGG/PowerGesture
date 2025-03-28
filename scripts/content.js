@@ -74,36 +74,11 @@ var _dragSettings = {
 
 var _action;
 
-var _specialEle = {
-    "https://www.bilibili.com/": () => {
-        return document.querySelector('#bewly')?.shadowRoot?.querySelector("div[data-overlayscrollbars-contents]");
-    }
-}
-
 function init() {
     // removeListener();
     initCanvas();
     initListener();
 }
-
-function getDragTarget() {
-    return specialEle[window.location.href]?.call() || document.body;
-}
-
-// /**
-//  * 移除影响插件工作的元素的监听事件
-//  */
-// function removeListener() {
-//     _removeEle.forEach(selector => {
-//         let ele = document.querySelector(selector);
-//         if (ele) {
-//             // let clone = ele.cloneNode(true);
-//             // ele.replaceWith(clone);
-//             // ele.removeAllEventListeners();
-//             // ele.onmousedown = () => { };
-//         }
-//     });
-// }
 
 function initCanvas() {
     const link = document.createElement("link");
@@ -186,9 +161,9 @@ function initListener() {
     document.addEventListener('dragend', function (event) {
         // console.log('拖拽结束:', event.target);
         _dragEndPoint = { x: event.clientX, y: event.clientY };
-        const rect = getDragTarget().getBoundingClientRect();
-        if (event.clientY < rect.top || event.clientY > rect.bottom || event.clientX < rect.left || event.clientX > rect.right) {
-            // console.log('拖拽区域超出了当前文档');
+        // const rect = getDragTarget().getBoundingClientRect();
+        if (event.clientY < 0 || event.clientY > window.innerHeight || event.clientX < 0 || event.clientX > window.innerWidth) {
+            console.log('拖拽区域超出了当前文档');
         } else {
             doDrag(event);
         }
