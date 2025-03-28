@@ -121,7 +121,6 @@ function initListener() {
             _isMouseDown = true;
             _mousePos = { x: e.clientX, y: e.clientY };
         }
-
         // console.log("鼠标按下");
     }, true);
 
@@ -155,6 +154,7 @@ function initListener() {
         _dragData = event.dataTransfer.getData("Files") || event.dataTransfer.getData("text/plain") || event.dataTransfer.getData("text/uri-list");
         // console.log('拖拽开始:', event.dataTransfer.getData("text/uri-list"), event.dataTransfer.getData("text/plain"), event.dataTransfer.getData("Files"));
         _dragStartPoint = { x: event.clientX, y: event.clientY };
+        updateStatus("dragStart");
     }, true);
 
     //拖拽结束
@@ -286,6 +286,10 @@ function checkAction() {
 
 function doAction() {
     chrome.runtime.sendMessage({ command: _action });
+}
+
+function updateStatus(status) {
+    chrome.runtime.sendMessage({ status: status });
 }
 
 function doDrag(data) {

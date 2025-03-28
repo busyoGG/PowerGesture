@@ -3,18 +3,30 @@ import { actions, drags, DragData } from "./scripts/bgActions.js";
 let socket = new WebSocket('ws://localhost:8765');
 let retryInterval = 5000; // 每5秒重试一次连接
 
+let status = "";
+
 function init() {
     connectToServer();
 
     chrome.tabs.onCreated.addListener(() => {
-        if (!DragData.actionDone) {
-            DragData.actionReject = true;
+        if (status === "dragStart") {
+
+            if (!DragData.actionDone) {
+                DragData.actionReject = true;
+            }
+
+            DragData.actionDone = false;
         }
 
-        DragData.actionDone = false;
+        status = "";
     });
 
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+
+        if (message?.status) {
+            status = message.status;
+        }
+
         if (message?.action === "simulateRightClick") {
             // 发送右键点击消息
             sendWebSocketMessage({ text: "right_click" }, sendResponse);
