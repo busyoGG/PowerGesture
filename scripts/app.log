@@ -338,3 +338,1956 @@
 2025-03-28 15:36:04,773 - DEBUG - < PONG 7e 33 59 98 [binary, 4 bytes]
 2025-03-28 15:36:04,773 - DEBUG - % received keepalive pong
 2025-03-28 15:36:04,773 - DEBUG - % received keepalive pong
+2025-03-28 15:36:24,792 - DEBUG - % sending keepalive ping
+2025-03-28 15:36:24,792 - DEBUG - > PING b6 25 8a 1f [binary, 4 bytes]
+2025-03-28 15:36:24,792 - DEBUG - % sending keepalive ping
+2025-03-28 15:36:24,792 - DEBUG - > PING f9 0e db 84 [binary, 4 bytes]
+2025-03-28 15:36:24,793 - DEBUG - < PONG b6 25 8a 1f [binary, 4 bytes]
+2025-03-28 15:36:24,793 - DEBUG - < PONG f9 0e db 84 [binary, 4 bytes]
+2025-03-28 15:36:24,793 - DEBUG - % received keepalive pong
+2025-03-28 15:36:24,793 - DEBUG - % received keepalive pong
+2025-03-28 15:36:44,807 - DEBUG - % sending keepalive ping
+2025-03-28 15:36:44,807 - DEBUG - > PING a9 77 6c 9d [binary, 4 bytes]
+2025-03-28 15:36:44,807 - DEBUG - % sending keepalive ping
+2025-03-28 15:36:44,807 - DEBUG - > PING 4e 34 78 98 [binary, 4 bytes]
+2025-03-28 15:36:44,807 - DEBUG - < PONG a9 77 6c 9d [binary, 4 bytes]
+2025-03-28 15:36:44,807 - DEBUG - < PONG 4e 34 78 98 [binary, 4 bytes]
+2025-03-28 15:36:44,807 - DEBUG - % received keepalive pong
+2025-03-28 15:36:44,807 - DEBUG - % received keepalive pong
+2025-03-28 15:37:04,828 - DEBUG - % sending keepalive ping
+2025-03-28 15:37:04,828 - DEBUG - > PING 'W] v' [text, 4 bytes]
+2025-03-28 15:37:04,828 - DEBUG - % sending keepalive ping
+2025-03-28 15:37:04,828 - DEBUG - > PING e9 22 c0 6b [binary, 4 bytes]
+2025-03-28 15:37:04,828 - DEBUG - < PONG 'W] v' [text, 4 bytes]
+2025-03-28 15:37:04,828 - DEBUG - < PONG e9 22 c0 6b [binary, 4 bytes]
+2025-03-28 15:37:04,828 - DEBUG - % received keepalive pong
+2025-03-28 15:37:04,828 - DEBUG - % received keepalive pong
+2025-03-28 15:37:14,266 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 15:37:14,266 - DEBUG - = connection is CLOSING
+2025-03-28 15:37:14,266 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 15:37:14,266 - DEBUG - x half-closing TCP connection
+2025-03-28 15:37:14,266 - DEBUG - = connection is CLOSED
+2025-03-28 15:37:14,266 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 15:37:14,267 - DEBUG - = connection is CLOSING
+2025-03-28 15:37:14,267 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 15:37:14,267 - DEBUG - x half-closing TCP connection
+2025-03-28 15:37:14,267 - DEBUG - = connection is CLOSED
+2025-03-28 15:37:14,267 - INFO - connection closed
+2025-03-28 15:37:14,267 - INFO - connection closed
+2025-03-28 16:01:50,554 - DEBUG - = connection is CONNECTING
+2025-03-28 16:01:50,557 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:01:50,557 - DEBUG - < Host: localhost:8765
+2025-03-28 16:01:50,557 - DEBUG - < Connection: Upgrade
+2025-03-28 16:01:50,557 - DEBUG - < Pragma: no-cache
+2025-03-28 16:01:50,557 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:01:50,557 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:01:50,557 - DEBUG - < Upgrade: websocket
+2025-03-28 16:01:50,557 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:01:50,557 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:01:50,557 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:01:50,557 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:01:50,557 - DEBUG - < Sec-WebSocket-Key: HnHuTfYpI/n9XFlulWJtSQ==
+2025-03-28 16:01:50,557 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:01:50,558 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:01:50,558 - DEBUG - > Upgrade: websocket
+2025-03-28 16:01:50,558 - DEBUG - > Connection: Upgrade
+2025-03-28 16:01:50,558 - DEBUG - > Sec-WebSocket-Accept: lNZoPhwoCSc4NAAAcc1y8of68UA=
+2025-03-28 16:01:50,558 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:01:50,558 - DEBUG - > Date: Fri, 28 Mar 2025 08:01:50 GMT
+2025-03-28 16:01:50,558 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:01:50,558 - INFO - connection open
+2025-03-28 16:01:50,558 - DEBUG - = connection is OPEN
+2025-03-28 16:01:50,569 - DEBUG - = connection is CONNECTING
+2025-03-28 16:01:50,570 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:01:50,570 - DEBUG - < Host: localhost:8765
+2025-03-28 16:01:50,570 - DEBUG - < Connection: Upgrade
+2025-03-28 16:01:50,570 - DEBUG - < Pragma: no-cache
+2025-03-28 16:01:50,570 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:01:50,570 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:01:50,570 - DEBUG - < Upgrade: websocket
+2025-03-28 16:01:50,570 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:01:50,570 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:01:50,570 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:01:50,570 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:01:50,570 - DEBUG - < Sec-WebSocket-Key: RjRYUZ+fHh3t0cCZ69S4eA==
+2025-03-28 16:01:50,570 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:01:50,571 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:01:50,571 - DEBUG - > Upgrade: websocket
+2025-03-28 16:01:50,571 - DEBUG - > Connection: Upgrade
+2025-03-28 16:01:50,571 - DEBUG - > Sec-WebSocket-Accept: pnqupiNAi9JfpYywDCpdLDBwKRc=
+2025-03-28 16:01:50,571 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:01:50,571 - DEBUG - > Date: Fri, 28 Mar 2025 08:01:50 GMT
+2025-03-28 16:01:50,571 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:01:50,571 - INFO - connection open
+2025-03-28 16:01:50,571 - DEBUG - = connection is OPEN
+2025-03-28 16:02:10,579 - DEBUG - % sending keepalive ping
+2025-03-28 16:02:10,579 - DEBUG - > PING 'ϸ=M' [text, 4 bytes]
+2025-03-28 16:02:10,579 - DEBUG - % sending keepalive ping
+2025-03-28 16:02:10,580 - DEBUG - > PING f3 a2 b9 e3 [binary, 4 bytes]
+2025-03-28 16:02:10,580 - DEBUG - < PONG 'ϸ=M' [text, 4 bytes]
+2025-03-28 16:02:10,580 - DEBUG - < PONG f3 a2 b9 e3 [binary, 4 bytes]
+2025-03-28 16:02:10,580 - DEBUG - % received keepalive pong
+2025-03-28 16:02:10,580 - DEBUG - % received keepalive pong
+2025-03-28 16:02:23,641 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:02:23,641 - DEBUG - = connection is CLOSING
+2025-03-28 16:02:23,641 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:02:23,641 - DEBUG - x half-closing TCP connection
+2025-03-28 16:02:23,641 - DEBUG - = connection is CLOSED
+2025-03-28 16:02:23,642 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:02:23,642 - DEBUG - = connection is CLOSING
+2025-03-28 16:02:23,642 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:02:23,642 - DEBUG - x half-closing TCP connection
+2025-03-28 16:02:23,642 - DEBUG - = connection is CLOSED
+2025-03-28 16:02:23,642 - INFO - connection closed
+2025-03-28 16:02:23,642 - INFO - connection closed
+2025-03-28 16:05:43,625 - DEBUG - = connection is CONNECTING
+2025-03-28 16:05:43,632 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:05:43,632 - DEBUG - < Host: localhost:8765
+2025-03-28 16:05:43,632 - DEBUG - < Connection: Upgrade
+2025-03-28 16:05:43,632 - DEBUG - < Pragma: no-cache
+2025-03-28 16:05:43,632 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:05:43,632 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:05:43,632 - DEBUG - < Upgrade: websocket
+2025-03-28 16:05:43,632 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:05:43,632 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:05:43,632 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:05:43,632 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:05:43,632 - DEBUG - < Sec-WebSocket-Key: agHfX0XC6a8zJUuRBpcgQA==
+2025-03-28 16:05:43,632 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:05:43,633 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:05:43,633 - DEBUG - > Upgrade: websocket
+2025-03-28 16:05:43,633 - DEBUG - > Connection: Upgrade
+2025-03-28 16:05:43,633 - DEBUG - > Sec-WebSocket-Accept: ROe24FDf8UYgxFhhCybB6C1RW6Y=
+2025-03-28 16:05:43,633 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:05:43,633 - DEBUG - > Date: Fri, 28 Mar 2025 08:05:43 GMT
+2025-03-28 16:05:43,633 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:05:43,633 - INFO - connection open
+2025-03-28 16:05:43,633 - DEBUG - = connection is OPEN
+2025-03-28 16:05:43,644 - DEBUG - = connection is CONNECTING
+2025-03-28 16:05:43,644 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:05:43,644 - DEBUG - < Host: localhost:8765
+2025-03-28 16:05:43,645 - DEBUG - < Connection: Upgrade
+2025-03-28 16:05:43,645 - DEBUG - < Pragma: no-cache
+2025-03-28 16:05:43,645 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:05:43,645 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:05:43,645 - DEBUG - < Upgrade: websocket
+2025-03-28 16:05:43,645 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:05:43,645 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:05:43,645 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:05:43,645 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:05:43,645 - DEBUG - < Sec-WebSocket-Key: Nd5XxqSpmDq73OdagXHNyg==
+2025-03-28 16:05:43,645 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:05:43,645 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:05:43,645 - DEBUG - > Upgrade: websocket
+2025-03-28 16:05:43,645 - DEBUG - > Connection: Upgrade
+2025-03-28 16:05:43,645 - DEBUG - > Sec-WebSocket-Accept: L1RCC1bTV52a30YkQgRsCd/gyBc=
+2025-03-28 16:05:43,645 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:05:43,645 - DEBUG - > Date: Fri, 28 Mar 2025 08:05:43 GMT
+2025-03-28 16:05:43,645 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:05:43,645 - INFO - connection open
+2025-03-28 16:05:43,645 - DEBUG - = connection is OPEN
+2025-03-28 16:06:03,653 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:03,653 - DEBUG - > PING 0e c4 17 b4 [binary, 4 bytes]
+2025-03-28 16:06:03,654 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:03,654 - DEBUG - > PING fe 6f 28 63 [binary, 4 bytes]
+2025-03-28 16:06:03,654 - DEBUG - < PONG 0e c4 17 b4 [binary, 4 bytes]
+2025-03-28 16:06:03,654 - DEBUG - % received keepalive pong
+2025-03-28 16:06:03,654 - DEBUG - < PONG fe 6f 28 63 [binary, 4 bytes]
+2025-03-28 16:06:03,654 - DEBUG - % received keepalive pong
+2025-03-28 16:06:23,657 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:23,657 - DEBUG - > PING 6a db 34 47 [binary, 4 bytes]
+2025-03-28 16:06:23,658 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:23,658 - DEBUG - > PING '\x03\x12#5' [text, 4 bytes]
+2025-03-28 16:06:23,658 - DEBUG - < PONG 6a db 34 47 [binary, 4 bytes]
+2025-03-28 16:06:23,658 - DEBUG - < PONG '\x03\x12#5' [text, 4 bytes]
+2025-03-28 16:06:23,658 - DEBUG - % received keepalive pong
+2025-03-28 16:06:23,658 - DEBUG - % received keepalive pong
+2025-03-28 16:06:43,678 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:43,678 - DEBUG - > PING 54 28 f5 e0 [binary, 4 bytes]
+2025-03-28 16:06:43,678 - DEBUG - % sending keepalive ping
+2025-03-28 16:06:43,678 - DEBUG - > PING 44 7e 69 fa [binary, 4 bytes]
+2025-03-28 16:06:43,679 - DEBUG - < PONG 54 28 f5 e0 [binary, 4 bytes]
+2025-03-28 16:06:43,679 - DEBUG - < PONG 44 7e 69 fa [binary, 4 bytes]
+2025-03-28 16:06:43,679 - DEBUG - % received keepalive pong
+2025-03-28 16:06:43,679 - DEBUG - % received keepalive pong
+2025-03-28 16:07:03,698 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:03,698 - DEBUG - > PING 2b 11 8c 5e [binary, 4 bytes]
+2025-03-28 16:07:03,699 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:03,699 - DEBUG - > PING 1f c6 77 41 [binary, 4 bytes]
+2025-03-28 16:07:03,699 - DEBUG - < PONG 2b 11 8c 5e [binary, 4 bytes]
+2025-03-28 16:07:03,699 - DEBUG - < PONG 1f c6 77 41 [binary, 4 bytes]
+2025-03-28 16:07:03,699 - DEBUG - % received keepalive pong
+2025-03-28 16:07:03,699 - DEBUG - % received keepalive pong
+2025-03-28 16:07:23,719 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:23,719 - DEBUG - > PING bf ac 2c f4 [binary, 4 bytes]
+2025-03-28 16:07:23,719 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:23,720 - DEBUG - > PING 52 86 93 73 [binary, 4 bytes]
+2025-03-28 16:07:23,720 - DEBUG - < PONG bf ac 2c f4 [binary, 4 bytes]
+2025-03-28 16:07:23,720 - DEBUG - < PONG 52 86 93 73 [binary, 4 bytes]
+2025-03-28 16:07:23,720 - DEBUG - % received keepalive pong
+2025-03-28 16:07:23,720 - DEBUG - % received keepalive pong
+2025-03-28 16:07:43,740 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:43,740 - DEBUG - > PING b6 42 52 41 [binary, 4 bytes]
+2025-03-28 16:07:43,740 - DEBUG - % sending keepalive ping
+2025-03-28 16:07:43,740 - DEBUG - > PING bc 06 a5 f3 [binary, 4 bytes]
+2025-03-28 16:07:43,741 - DEBUG - < PONG b6 42 52 41 [binary, 4 bytes]
+2025-03-28 16:07:43,741 - DEBUG - < PONG bc 06 a5 f3 [binary, 4 bytes]
+2025-03-28 16:07:43,741 - DEBUG - % received keepalive pong
+2025-03-28 16:07:43,741 - DEBUG - % received keepalive pong
+2025-03-28 16:07:56,833 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:07:56,833 - DEBUG - = connection is CLOSING
+2025-03-28 16:07:56,833 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:07:56,834 - DEBUG - x half-closing TCP connection
+2025-03-28 16:07:56,834 - DEBUG - = connection is CLOSED
+2025-03-28 16:07:56,834 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:07:56,834 - DEBUG - = connection is CLOSING
+2025-03-28 16:07:56,834 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:07:56,834 - DEBUG - x half-closing TCP connection
+2025-03-28 16:07:56,834 - DEBUG - = connection is CLOSED
+2025-03-28 16:07:56,834 - INFO - connection closed
+2025-03-28 16:07:56,834 - INFO - connection closed
+2025-03-28 16:08:10,642 - DEBUG - = connection is CONNECTING
+2025-03-28 16:08:10,642 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:08:10,642 - DEBUG - < Host: localhost:8765
+2025-03-28 16:08:10,642 - DEBUG - < Connection: Upgrade
+2025-03-28 16:08:10,642 - DEBUG - < Pragma: no-cache
+2025-03-28 16:08:10,642 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:08:10,643 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:08:10,643 - DEBUG - < Upgrade: websocket
+2025-03-28 16:08:10,643 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:08:10,643 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:08:10,643 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:08:10,643 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:08:10,643 - DEBUG - < Sec-WebSocket-Key: R3VXU/sqs486yh+Ex5KS/g==
+2025-03-28 16:08:10,643 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:08:10,643 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:08:10,643 - DEBUG - > Upgrade: websocket
+2025-03-28 16:08:10,643 - DEBUG - > Connection: Upgrade
+2025-03-28 16:08:10,643 - DEBUG - > Sec-WebSocket-Accept: SThMjaHPpuzykM0vW4oGWek7Hhw=
+2025-03-28 16:08:10,643 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:08:10,643 - DEBUG - > Date: Fri, 28 Mar 2025 08:08:10 GMT
+2025-03-28 16:08:10,643 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:08:10,643 - INFO - connection open
+2025-03-28 16:08:10,643 - DEBUG - = connection is OPEN
+2025-03-28 16:08:10,654 - DEBUG - = connection is CONNECTING
+2025-03-28 16:08:10,655 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:08:10,655 - DEBUG - < Host: localhost:8765
+2025-03-28 16:08:10,655 - DEBUG - < Connection: Upgrade
+2025-03-28 16:08:10,655 - DEBUG - < Pragma: no-cache
+2025-03-28 16:08:10,655 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:08:10,655 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:08:10,655 - DEBUG - < Upgrade: websocket
+2025-03-28 16:08:10,655 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:08:10,655 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:08:10,655 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:08:10,655 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:08:10,655 - DEBUG - < Sec-WebSocket-Key: ECQJoh2ZgO4YzBkYCsqrVw==
+2025-03-28 16:08:10,655 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:08:10,655 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:08:10,655 - DEBUG - > Upgrade: websocket
+2025-03-28 16:08:10,655 - DEBUG - > Connection: Upgrade
+2025-03-28 16:08:10,655 - DEBUG - > Sec-WebSocket-Accept: f/xt9NCmVLLaS4MMiSmtosETCD4=
+2025-03-28 16:08:10,655 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:08:10,655 - DEBUG - > Date: Fri, 28 Mar 2025 08:08:10 GMT
+2025-03-28 16:08:10,655 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:08:10,655 - INFO - connection open
+2025-03-28 16:08:10,655 - DEBUG - = connection is OPEN
+2025-03-28 16:08:11,370 - DEBUG - < TEXT '{"text":"right_click"}' [22 bytes]
+2025-03-28 16:08:11,380 - INFO - 接收到消息: {'text': 'right_click'}
+2025-03-28 16:08:11,380 - DEBUG - 执行鼠标右键点击
+2025-03-28 16:08:11,463 - INFO - ydotool 执行结果: c1 111
+
+2025-03-28 16:08:11,463 - DEBUG - > TEXT '{"status": "success"}' [21 bytes]
+2025-03-28 16:08:11,464 - DEBUG - > TEXT '{"status": "no action"}' [23 bytes]
+2025-03-28 16:08:11,660 - DEBUG - < TEXT '{"text":"right_click"}' [22 bytes]
+2025-03-28 16:08:11,661 - INFO - 接收到消息: {'text': 'right_click'}
+2025-03-28 16:08:11,661 - DEBUG - 执行鼠标右键点击
+2025-03-28 16:08:11,730 - INFO - ydotool 执行结果: c1 111
+
+2025-03-28 16:08:11,730 - DEBUG - > TEXT '{"status": "success"}' [21 bytes]
+2025-03-28 16:08:11,730 - DEBUG - > TEXT '{"status": "no action"}' [23 bytes]
+2025-03-28 16:08:30,662 - DEBUG - % sending keepalive ping
+2025-03-28 16:08:30,662 - DEBUG - > PING 82 73 3a 87 [binary, 4 bytes]
+2025-03-28 16:08:30,662 - DEBUG - % sending keepalive ping
+2025-03-28 16:08:30,663 - DEBUG - > PING c8 6b 97 aa [binary, 4 bytes]
+2025-03-28 16:08:30,663 - DEBUG - < PONG 82 73 3a 87 [binary, 4 bytes]
+2025-03-28 16:08:30,663 - DEBUG - < PONG c8 6b 97 aa [binary, 4 bytes]
+2025-03-28 16:08:30,663 - DEBUG - % received keepalive pong
+2025-03-28 16:08:30,663 - DEBUG - % received keepalive pong
+2025-03-28 16:08:50,682 - DEBUG - % sending keepalive ping
+2025-03-28 16:08:50,682 - DEBUG - > PING f6 df a5 d2 [binary, 4 bytes]
+2025-03-28 16:08:50,683 - DEBUG - % sending keepalive ping
+2025-03-28 16:08:50,683 - DEBUG - > PING e8 5c 31 da [binary, 4 bytes]
+2025-03-28 16:08:50,683 - DEBUG - < PONG f6 df a5 d2 [binary, 4 bytes]
+2025-03-28 16:08:50,683 - DEBUG - < PONG e8 5c 31 da [binary, 4 bytes]
+2025-03-28 16:08:50,683 - DEBUG - % received keepalive pong
+2025-03-28 16:08:50,683 - DEBUG - % received keepalive pong
+2025-03-28 16:09:10,702 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:10,702 - DEBUG - > PING '\t?I6' [text, 4 bytes]
+2025-03-28 16:09:10,702 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:10,703 - DEBUG - > PING 2c 14 f7 b4 [binary, 4 bytes]
+2025-03-28 16:09:10,703 - DEBUG - < PONG '\t?I6' [text, 4 bytes]
+2025-03-28 16:09:10,703 - DEBUG - < PONG 2c 14 f7 b4 [binary, 4 bytes]
+2025-03-28 16:09:10,703 - DEBUG - % received keepalive pong
+2025-03-28 16:09:10,703 - DEBUG - % received keepalive pong
+2025-03-28 16:09:30,722 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:30,722 - DEBUG - > PING 47 fa e0 fa [binary, 4 bytes]
+2025-03-28 16:09:30,723 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:30,723 - DEBUG - > PING a6 7d 84 a5 [binary, 4 bytes]
+2025-03-28 16:09:30,723 - DEBUG - < PONG 47 fa e0 fa [binary, 4 bytes]
+2025-03-28 16:09:30,723 - DEBUG - < PONG a6 7d 84 a5 [binary, 4 bytes]
+2025-03-28 16:09:30,723 - DEBUG - % received keepalive pong
+2025-03-28 16:09:30,723 - DEBUG - % received keepalive pong
+2025-03-28 16:09:50,743 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:50,743 - DEBUG - > PING a2 ff ed bd [binary, 4 bytes]
+2025-03-28 16:09:50,743 - DEBUG - % sending keepalive ping
+2025-03-28 16:09:50,743 - DEBUG - > PING 01 53 5a f6 [binary, 4 bytes]
+2025-03-28 16:09:50,743 - DEBUG - < PONG a2 ff ed bd [binary, 4 bytes]
+2025-03-28 16:09:50,743 - DEBUG - < PONG 01 53 5a f6 [binary, 4 bytes]
+2025-03-28 16:09:50,744 - DEBUG - % received keepalive pong
+2025-03-28 16:09:50,744 - DEBUG - % received keepalive pong
+2025-03-28 16:10:10,763 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:10,763 - DEBUG - > PING 1b 8b 89 a3 [binary, 4 bytes]
+2025-03-28 16:10:10,763 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:10,763 - DEBUG - > PING a0 00 54 76 [binary, 4 bytes]
+2025-03-28 16:10:10,764 - DEBUG - < PONG 1b 8b 89 a3 [binary, 4 bytes]
+2025-03-28 16:10:10,764 - DEBUG - < PONG a0 00 54 76 [binary, 4 bytes]
+2025-03-28 16:10:10,764 - DEBUG - % received keepalive pong
+2025-03-28 16:10:10,764 - DEBUG - % received keepalive pong
+2025-03-28 16:10:30,783 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:30,783 - DEBUG - > PING fe b2 70 cb [binary, 4 bytes]
+2025-03-28 16:10:30,784 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:30,784 - DEBUG - > PING 5b 48 c0 17 [binary, 4 bytes]
+2025-03-28 16:10:30,784 - DEBUG - < PONG fe b2 70 cb [binary, 4 bytes]
+2025-03-28 16:10:30,784 - DEBUG - < PONG 5b 48 c0 17 [binary, 4 bytes]
+2025-03-28 16:10:30,784 - DEBUG - % received keepalive pong
+2025-03-28 16:10:30,784 - DEBUG - % received keepalive pong
+2025-03-28 16:10:50,803 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:50,803 - DEBUG - > PING 7f 22 97 0c [binary, 4 bytes]
+2025-03-28 16:10:50,803 - DEBUG - % sending keepalive ping
+2025-03-28 16:10:50,803 - DEBUG - > PING 1f 9a 8b 1f [binary, 4 bytes]
+2025-03-28 16:10:50,804 - DEBUG - < PONG 7f 22 97 0c [binary, 4 bytes]
+2025-03-28 16:10:50,804 - DEBUG - < PONG 1f 9a 8b 1f [binary, 4 bytes]
+2025-03-28 16:10:50,804 - DEBUG - % received keepalive pong
+2025-03-28 16:10:50,804 - DEBUG - % received keepalive pong
+2025-03-28 16:11:10,823 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:10,823 - DEBUG - > PING 50 77 be 05 [binary, 4 bytes]
+2025-03-28 16:11:10,823 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:10,823 - DEBUG - > PING 3b 91 67 c2 [binary, 4 bytes]
+2025-03-28 16:11:10,824 - DEBUG - < PONG 50 77 be 05 [binary, 4 bytes]
+2025-03-28 16:11:10,824 - DEBUG - < PONG 3b 91 67 c2 [binary, 4 bytes]
+2025-03-28 16:11:10,824 - DEBUG - % received keepalive pong
+2025-03-28 16:11:10,824 - DEBUG - % received keepalive pong
+2025-03-28 16:11:30,843 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:30,843 - DEBUG - > PING 19 38 76 dc [binary, 4 bytes]
+2025-03-28 16:11:30,844 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:30,844 - DEBUG - > PING 57 8e 23 64 [binary, 4 bytes]
+2025-03-28 16:11:30,844 - DEBUG - < PONG 19 38 76 dc [binary, 4 bytes]
+2025-03-28 16:11:30,844 - DEBUG - < PONG 57 8e 23 64 [binary, 4 bytes]
+2025-03-28 16:11:30,844 - DEBUG - % received keepalive pong
+2025-03-28 16:11:30,844 - DEBUG - % received keepalive pong
+2025-03-28 16:11:50,863 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:50,863 - DEBUG - > PING 84 33 cd 81 [binary, 4 bytes]
+2025-03-28 16:11:50,864 - DEBUG - % sending keepalive ping
+2025-03-28 16:11:50,864 - DEBUG - > PING 'Pȇ"' [text, 4 bytes]
+2025-03-28 16:11:50,864 - DEBUG - < PONG 84 33 cd 81 [binary, 4 bytes]
+2025-03-28 16:11:50,864 - DEBUG - < PONG 'Pȇ"' [text, 4 bytes]
+2025-03-28 16:11:50,864 - DEBUG - % received keepalive pong
+2025-03-28 16:11:50,864 - DEBUG - % received keepalive pong
+2025-03-28 16:12:10,884 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:10,884 - DEBUG - > PING 1b ae 16 3a [binary, 4 bytes]
+2025-03-28 16:12:10,884 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:10,884 - DEBUG - > PING e0 33 2b 03 [binary, 4 bytes]
+2025-03-28 16:12:10,885 - DEBUG - < PONG 1b ae 16 3a [binary, 4 bytes]
+2025-03-28 16:12:10,885 - DEBUG - < PONG e0 33 2b 03 [binary, 4 bytes]
+2025-03-28 16:12:10,885 - DEBUG - % received keepalive pong
+2025-03-28 16:12:10,885 - DEBUG - % received keepalive pong
+2025-03-28 16:12:30,904 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:30,904 - DEBUG - > PING 28 e0 e0 86 [binary, 4 bytes]
+2025-03-28 16:12:30,904 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:30,904 - DEBUG - > PING a6 95 8c d1 [binary, 4 bytes]
+2025-03-28 16:12:30,905 - DEBUG - < PONG 28 e0 e0 86 [binary, 4 bytes]
+2025-03-28 16:12:30,905 - DEBUG - < PONG a6 95 8c d1 [binary, 4 bytes]
+2025-03-28 16:12:30,905 - DEBUG - % received keepalive pong
+2025-03-28 16:12:30,905 - DEBUG - % received keepalive pong
+2025-03-28 16:12:50,924 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:50,924 - DEBUG - > PING 12 bc 11 1b [binary, 4 bytes]
+2025-03-28 16:12:50,924 - DEBUG - % sending keepalive ping
+2025-03-28 16:12:50,924 - DEBUG - > PING e4 9d 0c c1 [binary, 4 bytes]
+2025-03-28 16:12:50,925 - DEBUG - < PONG 12 bc 11 1b [binary, 4 bytes]
+2025-03-28 16:12:50,925 - DEBUG - < PONG e4 9d 0c c1 [binary, 4 bytes]
+2025-03-28 16:12:50,925 - DEBUG - % received keepalive pong
+2025-03-28 16:12:50,925 - DEBUG - % received keepalive pong
+2025-03-28 16:13:10,944 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:10,944 - DEBUG - > PING ff ad 4c 62 [binary, 4 bytes]
+2025-03-28 16:13:10,944 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:10,945 - DEBUG - > PING fb ee 8a d8 [binary, 4 bytes]
+2025-03-28 16:13:10,945 - DEBUG - < PONG ff ad 4c 62 [binary, 4 bytes]
+2025-03-28 16:13:10,945 - DEBUG - < PONG fb ee 8a d8 [binary, 4 bytes]
+2025-03-28 16:13:10,945 - DEBUG - % received keepalive pong
+2025-03-28 16:13:10,945 - DEBUG - % received keepalive pong
+2025-03-28 16:13:30,964 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:30,964 - DEBUG - > PING b5 8a 4a 33 [binary, 4 bytes]
+2025-03-28 16:13:30,964 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:30,964 - DEBUG - > PING 17 90 9b ba [binary, 4 bytes]
+2025-03-28 16:13:30,965 - DEBUG - < PONG b5 8a 4a 33 [binary, 4 bytes]
+2025-03-28 16:13:30,965 - DEBUG - < PONG 17 90 9b ba [binary, 4 bytes]
+2025-03-28 16:13:30,965 - DEBUG - % received keepalive pong
+2025-03-28 16:13:30,965 - DEBUG - % received keepalive pong
+2025-03-28 16:13:50,977 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:50,977 - DEBUG - > PING 0f 61 70 e0 [binary, 4 bytes]
+2025-03-28 16:13:50,977 - DEBUG - % sending keepalive ping
+2025-03-28 16:13:50,978 - DEBUG - > PING c9 c3 80 a5 [binary, 4 bytes]
+2025-03-28 16:13:50,978 - DEBUG - < PONG 0f 61 70 e0 [binary, 4 bytes]
+2025-03-28 16:13:50,978 - DEBUG - < PONG c9 c3 80 a5 [binary, 4 bytes]
+2025-03-28 16:13:50,978 - DEBUG - % received keepalive pong
+2025-03-28 16:13:50,978 - DEBUG - % received keepalive pong
+2025-03-28 16:14:10,997 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:10,998 - DEBUG - > PING d4 dd 00 72 [binary, 4 bytes]
+2025-03-28 16:14:10,998 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:10,998 - DEBUG - > PING ef 02 72 42 [binary, 4 bytes]
+2025-03-28 16:14:10,998 - DEBUG - < PONG d4 dd 00 72 [binary, 4 bytes]
+2025-03-28 16:14:10,998 - DEBUG - < PONG ef 02 72 42 [binary, 4 bytes]
+2025-03-28 16:14:10,998 - DEBUG - % received keepalive pong
+2025-03-28 16:14:10,998 - DEBUG - % received keepalive pong
+2025-03-28 16:14:31,018 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:31,018 - DEBUG - > PING ee 34 26 99 [binary, 4 bytes]
+2025-03-28 16:14:31,018 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:31,019 - DEBUG - > PING 5b 21 45 f8 [binary, 4 bytes]
+2025-03-28 16:14:31,019 - DEBUG - < PONG ee 34 26 99 [binary, 4 bytes]
+2025-03-28 16:14:31,019 - DEBUG - < PONG 5b 21 45 f8 [binary, 4 bytes]
+2025-03-28 16:14:31,019 - DEBUG - % received keepalive pong
+2025-03-28 16:14:31,019 - DEBUG - % received keepalive pong
+2025-03-28 16:14:51,038 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:51,038 - DEBUG - > PING 34 12 d3 1b [binary, 4 bytes]
+2025-03-28 16:14:51,039 - DEBUG - % sending keepalive ping
+2025-03-28 16:14:51,039 - DEBUG - > PING 28 93 29 29 [binary, 4 bytes]
+2025-03-28 16:14:51,039 - DEBUG - < PONG 34 12 d3 1b [binary, 4 bytes]
+2025-03-28 16:14:51,039 - DEBUG - % received keepalive pong
+2025-03-28 16:14:51,039 - DEBUG - < PONG 28 93 29 29 [binary, 4 bytes]
+2025-03-28 16:14:51,039 - DEBUG - % received keepalive pong
+2025-03-28 16:15:10,624 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:15:10,624 - DEBUG - = connection is CLOSING
+2025-03-28 16:15:10,624 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:15:10,625 - DEBUG - x half-closing TCP connection
+2025-03-28 16:15:10,625 - DEBUG - = connection is CLOSED
+2025-03-28 16:15:10,625 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:15:10,625 - DEBUG - = connection is CLOSING
+2025-03-28 16:15:10,625 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:15:10,625 - DEBUG - x half-closing TCP connection
+2025-03-28 16:15:10,625 - DEBUG - = connection is CLOSED
+2025-03-28 16:15:10,625 - INFO - connection closed
+2025-03-28 16:15:10,626 - INFO - connection closed
+2025-03-28 16:16:48,049 - DEBUG - = connection is CONNECTING
+2025-03-28 16:16:48,050 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:16:48,050 - DEBUG - < Host: localhost:8765
+2025-03-28 16:16:48,050 - DEBUG - < Connection: Upgrade
+2025-03-28 16:16:48,050 - DEBUG - < Pragma: no-cache
+2025-03-28 16:16:48,050 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:16:48,050 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:16:48,050 - DEBUG - < Upgrade: websocket
+2025-03-28 16:16:48,050 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:16:48,050 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:16:48,050 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:16:48,050 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:16:48,050 - DEBUG - < Sec-WebSocket-Key: W4yJf13Vt8t4sQQVBjFVEg==
+2025-03-28 16:16:48,050 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:16:48,051 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:16:48,051 - DEBUG - > Upgrade: websocket
+2025-03-28 16:16:48,051 - DEBUG - > Connection: Upgrade
+2025-03-28 16:16:48,051 - DEBUG - > Sec-WebSocket-Accept: A/Yb9w0vQK/TU1mcN/7Z2ER7ECI=
+2025-03-28 16:16:48,051 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:16:48,051 - DEBUG - > Date: Fri, 28 Mar 2025 08:16:48 GMT
+2025-03-28 16:16:48,051 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:16:48,051 - INFO - connection open
+2025-03-28 16:16:48,051 - DEBUG - = connection is OPEN
+2025-03-28 16:16:48,062 - DEBUG - = connection is CONNECTING
+2025-03-28 16:16:48,062 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:16:48,062 - DEBUG - < Host: localhost:8765
+2025-03-28 16:16:48,062 - DEBUG - < Connection: Upgrade
+2025-03-28 16:16:48,062 - DEBUG - < Pragma: no-cache
+2025-03-28 16:16:48,062 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:16:48,062 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:16:48,062 - DEBUG - < Upgrade: websocket
+2025-03-28 16:16:48,062 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:16:48,062 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:16:48,062 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:16:48,062 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:16:48,062 - DEBUG - < Sec-WebSocket-Key: JgDwIWgOj2RvHcgKu/5Dsw==
+2025-03-28 16:16:48,062 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:16:48,063 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:16:48,063 - DEBUG - > Upgrade: websocket
+2025-03-28 16:16:48,063 - DEBUG - > Connection: Upgrade
+2025-03-28 16:16:48,063 - DEBUG - > Sec-WebSocket-Accept: 4gvxBeqSE1kiUBsOz/M8RrpjdMY=
+2025-03-28 16:16:48,063 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:16:48,063 - DEBUG - > Date: Fri, 28 Mar 2025 08:16:48 GMT
+2025-03-28 16:16:48,063 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:16:48,063 - INFO - connection open
+2025-03-28 16:16:48,063 - DEBUG - = connection is OPEN
+2025-03-28 16:17:08,071 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:08,071 - DEBUG - > PING '^Ir\x1d' [text, 4 bytes]
+2025-03-28 16:17:08,071 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:08,072 - DEBUG - > PING 02 fa 1b fa [binary, 4 bytes]
+2025-03-28 16:17:08,072 - DEBUG - < PONG '^Ir\x1d' [text, 4 bytes]
+2025-03-28 16:17:08,072 - DEBUG - < PONG 02 fa 1b fa [binary, 4 bytes]
+2025-03-28 16:17:08,072 - DEBUG - % received keepalive pong
+2025-03-28 16:17:08,072 - DEBUG - % received keepalive pong
+2025-03-28 16:17:28,091 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:28,091 - DEBUG - > PING 11 d7 31 68 [binary, 4 bytes]
+2025-03-28 16:17:28,092 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:28,092 - DEBUG - > PING 1c cf 35 df [binary, 4 bytes]
+2025-03-28 16:17:28,092 - DEBUG - < PONG 11 d7 31 68 [binary, 4 bytes]
+2025-03-28 16:17:28,092 - DEBUG - % received keepalive pong
+2025-03-28 16:17:28,092 - DEBUG - < PONG 1c cf 35 df [binary, 4 bytes]
+2025-03-28 16:17:28,093 - DEBUG - % received keepalive pong
+2025-03-28 16:17:48,112 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:48,112 - DEBUG - > PING a9 c6 41 a8 [binary, 4 bytes]
+2025-03-28 16:17:48,112 - DEBUG - % sending keepalive ping
+2025-03-28 16:17:48,113 - DEBUG - > PING d7 f0 de c6 [binary, 4 bytes]
+2025-03-28 16:17:48,113 - DEBUG - < PONG a9 c6 41 a8 [binary, 4 bytes]
+2025-03-28 16:17:48,113 - DEBUG - < PONG d7 f0 de c6 [binary, 4 bytes]
+2025-03-28 16:17:48,113 - DEBUG - % received keepalive pong
+2025-03-28 16:17:48,113 - DEBUG - % received keepalive pong
+2025-03-28 16:18:08,132 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:08,132 - DEBUG - > PING 62 ca 32 e4 [binary, 4 bytes]
+2025-03-28 16:18:08,133 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:08,133 - DEBUG - > PING 70 cc 25 56 [binary, 4 bytes]
+2025-03-28 16:18:08,133 - DEBUG - < PONG 62 ca 32 e4 [binary, 4 bytes]
+2025-03-28 16:18:08,133 - DEBUG - < PONG 70 cc 25 56 [binary, 4 bytes]
+2025-03-28 16:18:08,133 - DEBUG - % received keepalive pong
+2025-03-28 16:18:08,133 - DEBUG - % received keepalive pong
+2025-03-28 16:18:28,152 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:28,152 - DEBUG - > PING f4 b1 01 7f [binary, 4 bytes]
+2025-03-28 16:18:28,152 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:28,152 - DEBUG - > PING 83 97 64 cb [binary, 4 bytes]
+2025-03-28 16:18:28,153 - DEBUG - < PONG f4 b1 01 7f [binary, 4 bytes]
+2025-03-28 16:18:28,153 - DEBUG - < PONG 83 97 64 cb [binary, 4 bytes]
+2025-03-28 16:18:28,153 - DEBUG - % received keepalive pong
+2025-03-28 16:18:28,153 - DEBUG - % received keepalive pong
+2025-03-28 16:18:48,172 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:48,172 - DEBUG - > PING 86 61 d7 5a [binary, 4 bytes]
+2025-03-28 16:18:48,173 - DEBUG - % sending keepalive ping
+2025-03-28 16:18:48,173 - DEBUG - > PING 19 39 0f ec [binary, 4 bytes]
+2025-03-28 16:18:48,173 - DEBUG - < PONG 86 61 d7 5a [binary, 4 bytes]
+2025-03-28 16:18:48,173 - DEBUG - < PONG 19 39 0f ec [binary, 4 bytes]
+2025-03-28 16:18:48,173 - DEBUG - % received keepalive pong
+2025-03-28 16:18:48,173 - DEBUG - % received keepalive pong
+2025-03-28 16:19:08,192 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:08,192 - DEBUG - > PING e2 e0 21 eb [binary, 4 bytes]
+2025-03-28 16:19:08,192 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:08,193 - DEBUG - > PING 'OTu;' [text, 4 bytes]
+2025-03-28 16:19:08,193 - DEBUG - < PONG e2 e0 21 eb [binary, 4 bytes]
+2025-03-28 16:19:08,193 - DEBUG - < PONG 'OTu;' [text, 4 bytes]
+2025-03-28 16:19:08,193 - DEBUG - % received keepalive pong
+2025-03-28 16:19:08,193 - DEBUG - % received keepalive pong
+2025-03-28 16:19:28,212 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:28,212 - DEBUG - > PING 14 de 86 b8 [binary, 4 bytes]
+2025-03-28 16:19:28,212 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:28,212 - DEBUG - > PING 'H-Ւ' [text, 4 bytes]
+2025-03-28 16:19:28,213 - DEBUG - < PONG 14 de 86 b8 [binary, 4 bytes]
+2025-03-28 16:19:28,213 - DEBUG - < PONG 'H-Ւ' [text, 4 bytes]
+2025-03-28 16:19:28,213 - DEBUG - % received keepalive pong
+2025-03-28 16:19:28,213 - DEBUG - % received keepalive pong
+2025-03-28 16:19:48,232 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:48,233 - DEBUG - > PING 1a cd 75 1b [binary, 4 bytes]
+2025-03-28 16:19:48,233 - DEBUG - % sending keepalive ping
+2025-03-28 16:19:48,233 - DEBUG - > PING db 7d 06 da [binary, 4 bytes]
+2025-03-28 16:19:48,233 - DEBUG - < PONG 1a cd 75 1b [binary, 4 bytes]
+2025-03-28 16:19:48,233 - DEBUG - < PONG db 7d 06 da [binary, 4 bytes]
+2025-03-28 16:19:48,233 - DEBUG - % received keepalive pong
+2025-03-28 16:19:48,233 - DEBUG - % received keepalive pong
+2025-03-28 16:20:08,253 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:08,253 - DEBUG - > PING 05 a1 08 dc [binary, 4 bytes]
+2025-03-28 16:20:08,253 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:08,253 - DEBUG - > PING 86 09 3c a2 [binary, 4 bytes]
+2025-03-28 16:20:08,254 - DEBUG - < PONG 05 a1 08 dc [binary, 4 bytes]
+2025-03-28 16:20:08,254 - DEBUG - < PONG 86 09 3c a2 [binary, 4 bytes]
+2025-03-28 16:20:08,254 - DEBUG - % received keepalive pong
+2025-03-28 16:20:08,254 - DEBUG - % received keepalive pong
+2025-03-28 16:20:28,273 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:28,274 - DEBUG - > PING 41 6c 63 8f [binary, 4 bytes]
+2025-03-28 16:20:28,274 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:28,274 - DEBUG - > PING e1 04 1f 50 [binary, 4 bytes]
+2025-03-28 16:20:28,274 - DEBUG - < PONG 41 6c 63 8f [binary, 4 bytes]
+2025-03-28 16:20:28,274 - DEBUG - < PONG e1 04 1f 50 [binary, 4 bytes]
+2025-03-28 16:20:28,274 - DEBUG - % received keepalive pong
+2025-03-28 16:20:28,274 - DEBUG - % received keepalive pong
+2025-03-28 16:20:48,294 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:48,294 - DEBUG - > PING 59 b5 c3 65 [binary, 4 bytes]
+2025-03-28 16:20:48,295 - DEBUG - % sending keepalive ping
+2025-03-28 16:20:48,295 - DEBUG - > PING 32 83 76 eb [binary, 4 bytes]
+2025-03-28 16:20:48,295 - DEBUG - < PONG 59 b5 c3 65 [binary, 4 bytes]
+2025-03-28 16:20:48,295 - DEBUG - < PONG 32 83 76 eb [binary, 4 bytes]
+2025-03-28 16:20:48,295 - DEBUG - % received keepalive pong
+2025-03-28 16:20:48,295 - DEBUG - % received keepalive pong
+2025-03-28 16:21:08,315 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:08,315 - DEBUG - > PING 57 ba a7 0b [binary, 4 bytes]
+2025-03-28 16:21:08,316 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:08,316 - DEBUG - > PING '8\uf826' [text, 4 bytes]
+2025-03-28 16:21:08,316 - DEBUG - < PONG 57 ba a7 0b [binary, 4 bytes]
+2025-03-28 16:21:08,316 - DEBUG - < PONG '8\uf826' [text, 4 bytes]
+2025-03-28 16:21:08,316 - DEBUG - % received keepalive pong
+2025-03-28 16:21:08,316 - DEBUG - % received keepalive pong
+2025-03-28 16:21:28,336 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:28,336 - DEBUG - > PING 88 db 1d 95 [binary, 4 bytes]
+2025-03-28 16:21:28,336 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:28,336 - DEBUG - > PING 45 79 e4 e3 [binary, 4 bytes]
+2025-03-28 16:21:28,336 - DEBUG - < PONG 88 db 1d 95 [binary, 4 bytes]
+2025-03-28 16:21:28,336 - DEBUG - < PONG 45 79 e4 e3 [binary, 4 bytes]
+2025-03-28 16:21:28,336 - DEBUG - % received keepalive pong
+2025-03-28 16:21:28,337 - DEBUG - % received keepalive pong
+2025-03-28 16:21:48,356 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:48,356 - DEBUG - > PING 7c 4f 6a dd [binary, 4 bytes]
+2025-03-28 16:21:48,356 - DEBUG - % sending keepalive ping
+2025-03-28 16:21:48,357 - DEBUG - > PING 1f b2 7f 44 [binary, 4 bytes]
+2025-03-28 16:21:48,357 - DEBUG - < PONG 7c 4f 6a dd [binary, 4 bytes]
+2025-03-28 16:21:48,357 - DEBUG - < PONG 1f b2 7f 44 [binary, 4 bytes]
+2025-03-28 16:21:48,357 - DEBUG - % received keepalive pong
+2025-03-28 16:21:48,357 - DEBUG - % received keepalive pong
+2025-03-28 16:22:08,377 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:08,377 - DEBUG - > PING 34 8b ad 96 [binary, 4 bytes]
+2025-03-28 16:22:08,377 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:08,377 - DEBUG - > PING 84 19 2f 25 [binary, 4 bytes]
+2025-03-28 16:22:08,378 - DEBUG - < PONG 34 8b ad 96 [binary, 4 bytes]
+2025-03-28 16:22:08,378 - DEBUG - < PONG 84 19 2f 25 [binary, 4 bytes]
+2025-03-28 16:22:08,378 - DEBUG - % received keepalive pong
+2025-03-28 16:22:08,378 - DEBUG - % received keepalive pong
+2025-03-28 16:22:28,395 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:28,395 - DEBUG - > PING ca 61 ed 5b [binary, 4 bytes]
+2025-03-28 16:22:28,395 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:28,395 - DEBUG - > PING 07 63 5b 9c [binary, 4 bytes]
+2025-03-28 16:22:28,395 - DEBUG - < PONG ca 61 ed 5b [binary, 4 bytes]
+2025-03-28 16:22:28,395 - DEBUG - % received keepalive pong
+2025-03-28 16:22:28,395 - DEBUG - < PONG 07 63 5b 9c [binary, 4 bytes]
+2025-03-28 16:22:28,395 - DEBUG - % received keepalive pong
+2025-03-28 16:22:48,415 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:48,415 - DEBUG - > PING '\x10\x0cwO' [text, 4 bytes]
+2025-03-28 16:22:48,415 - DEBUG - % sending keepalive ping
+2025-03-28 16:22:48,416 - DEBUG - > PING 40 e5 30 1f [binary, 4 bytes]
+2025-03-28 16:22:48,416 - DEBUG - < PONG '\x10\x0cwO' [text, 4 bytes]
+2025-03-28 16:22:48,416 - DEBUG - < PONG 40 e5 30 1f [binary, 4 bytes]
+2025-03-28 16:22:48,416 - DEBUG - % received keepalive pong
+2025-03-28 16:22:48,416 - DEBUG - % received keepalive pong
+2025-03-28 16:23:08,435 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:08,435 - DEBUG - > PING f9 6a a6 3a [binary, 4 bytes]
+2025-03-28 16:23:08,435 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:08,436 - DEBUG - > PING 07 60 ad 6c [binary, 4 bytes]
+2025-03-28 16:23:08,436 - DEBUG - < PONG f9 6a a6 3a [binary, 4 bytes]
+2025-03-28 16:23:08,436 - DEBUG - < PONG 07 60 ad 6c [binary, 4 bytes]
+2025-03-28 16:23:08,436 - DEBUG - % received keepalive pong
+2025-03-28 16:23:08,436 - DEBUG - % received keepalive pong
+2025-03-28 16:23:28,455 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:28,455 - DEBUG - > PING 50 73 f5 62 [binary, 4 bytes]
+2025-03-28 16:23:28,455 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:28,456 - DEBUG - > PING 8e e0 30 fe [binary, 4 bytes]
+2025-03-28 16:23:28,456 - DEBUG - < PONG 50 73 f5 62 [binary, 4 bytes]
+2025-03-28 16:23:28,456 - DEBUG - < PONG 8e e0 30 fe [binary, 4 bytes]
+2025-03-28 16:23:28,456 - DEBUG - % received keepalive pong
+2025-03-28 16:23:28,456 - DEBUG - % received keepalive pong
+2025-03-28 16:23:48,476 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:48,476 - DEBUG - > PING c4 da 36 52 [binary, 4 bytes]
+2025-03-28 16:23:48,477 - DEBUG - % sending keepalive ping
+2025-03-28 16:23:48,477 - DEBUG - > PING b4 7f 79 97 [binary, 4 bytes]
+2025-03-28 16:23:48,477 - DEBUG - < PONG c4 da 36 52 [binary, 4 bytes]
+2025-03-28 16:23:48,477 - DEBUG - < PONG b4 7f 79 97 [binary, 4 bytes]
+2025-03-28 16:23:48,477 - DEBUG - % received keepalive pong
+2025-03-28 16:23:48,477 - DEBUG - % received keepalive pong
+2025-03-28 16:24:08,496 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:08,496 - DEBUG - > PING e4 75 fe 54 [binary, 4 bytes]
+2025-03-28 16:24:08,496 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:08,497 - DEBUG - > PING e3 37 12 c4 [binary, 4 bytes]
+2025-03-28 16:24:08,497 - DEBUG - < PONG e4 75 fe 54 [binary, 4 bytes]
+2025-03-28 16:24:08,497 - DEBUG - < PONG e3 37 12 c4 [binary, 4 bytes]
+2025-03-28 16:24:08,497 - DEBUG - % received keepalive pong
+2025-03-28 16:24:08,497 - DEBUG - % received keepalive pong
+2025-03-28 16:24:28,516 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:28,516 - DEBUG - > PING 'hW\x17 ' [text, 4 bytes]
+2025-03-28 16:24:28,516 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:28,516 - DEBUG - > PING f6 5e 8f 6e [binary, 4 bytes]
+2025-03-28 16:24:28,517 - DEBUG - < PONG 'hW\x17 ' [text, 4 bytes]
+2025-03-28 16:24:28,517 - DEBUG - < PONG f6 5e 8f 6e [binary, 4 bytes]
+2025-03-28 16:24:28,517 - DEBUG - % received keepalive pong
+2025-03-28 16:24:28,517 - DEBUG - % received keepalive pong
+2025-03-28 16:24:48,536 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:48,536 - DEBUG - > PING 3a 26 06 fd [binary, 4 bytes]
+2025-03-28 16:24:48,536 - DEBUG - % sending keepalive ping
+2025-03-28 16:24:48,537 - DEBUG - > PING 9d 49 9b ef [binary, 4 bytes]
+2025-03-28 16:24:48,537 - DEBUG - < PONG 3a 26 06 fd [binary, 4 bytes]
+2025-03-28 16:24:48,537 - DEBUG - < PONG 9d 49 9b ef [binary, 4 bytes]
+2025-03-28 16:24:48,537 - DEBUG - % received keepalive pong
+2025-03-28 16:24:48,537 - DEBUG - % received keepalive pong
+2025-03-28 16:25:08,556 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:08,556 - DEBUG - > PING d9 13 b9 47 [binary, 4 bytes]
+2025-03-28 16:25:08,556 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:08,556 - DEBUG - > PING 1f e2 b3 08 [binary, 4 bytes]
+2025-03-28 16:25:08,557 - DEBUG - < PONG d9 13 b9 47 [binary, 4 bytes]
+2025-03-28 16:25:08,557 - DEBUG - < PONG 1f e2 b3 08 [binary, 4 bytes]
+2025-03-28 16:25:08,557 - DEBUG - % received keepalive pong
+2025-03-28 16:25:08,557 - DEBUG - % received keepalive pong
+2025-03-28 16:25:28,576 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:28,576 - DEBUG - > PING ',U\x05_' [text, 4 bytes]
+2025-03-28 16:25:28,576 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:28,576 - DEBUG - > PING ea e4 dd 80 [binary, 4 bytes]
+2025-03-28 16:25:28,577 - DEBUG - < PONG ',U\x05_' [text, 4 bytes]
+2025-03-28 16:25:28,577 - DEBUG - < PONG ea e4 dd 80 [binary, 4 bytes]
+2025-03-28 16:25:28,577 - DEBUG - % received keepalive pong
+2025-03-28 16:25:28,577 - DEBUG - % received keepalive pong
+2025-03-28 16:25:48,596 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:48,596 - DEBUG - > PING a1 c8 f4 8d [binary, 4 bytes]
+2025-03-28 16:25:48,596 - DEBUG - % sending keepalive ping
+2025-03-28 16:25:48,596 - DEBUG - > PING 03 58 0b dc [binary, 4 bytes]
+2025-03-28 16:25:48,597 - DEBUG - < PONG a1 c8 f4 8d [binary, 4 bytes]
+2025-03-28 16:25:48,597 - DEBUG - < PONG 03 58 0b dc [binary, 4 bytes]
+2025-03-28 16:25:48,597 - DEBUG - % received keepalive pong
+2025-03-28 16:25:48,597 - DEBUG - % received keepalive pong
+2025-03-28 16:26:08,616 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:08,616 - DEBUG - > PING fc 2a 2c e3 [binary, 4 bytes]
+2025-03-28 16:26:08,616 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:08,616 - DEBUG - > PING dd f6 63 0b [binary, 4 bytes]
+2025-03-28 16:26:08,617 - DEBUG - < PONG fc 2a 2c e3 [binary, 4 bytes]
+2025-03-28 16:26:08,617 - DEBUG - < PONG dd f6 63 0b [binary, 4 bytes]
+2025-03-28 16:26:08,617 - DEBUG - % received keepalive pong
+2025-03-28 16:26:08,617 - DEBUG - % received keepalive pong
+2025-03-28 16:26:28,636 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:28,636 - DEBUG - > PING eb 98 04 cf [binary, 4 bytes]
+2025-03-28 16:26:28,636 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:28,636 - DEBUG - > PING c6 46 26 fa [binary, 4 bytes]
+2025-03-28 16:26:28,637 - DEBUG - < PONG eb 98 04 cf [binary, 4 bytes]
+2025-03-28 16:26:28,637 - DEBUG - < PONG c6 46 26 fa [binary, 4 bytes]
+2025-03-28 16:26:28,637 - DEBUG - % received keepalive pong
+2025-03-28 16:26:28,637 - DEBUG - % received keepalive pong
+2025-03-28 16:26:48,656 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:48,656 - DEBUG - > PING 86 1c 16 be [binary, 4 bytes]
+2025-03-28 16:26:48,656 - DEBUG - % sending keepalive ping
+2025-03-28 16:26:48,656 - DEBUG - > PING b0 6e 41 9d [binary, 4 bytes]
+2025-03-28 16:26:48,656 - DEBUG - < PONG 86 1c 16 be [binary, 4 bytes]
+2025-03-28 16:26:48,656 - DEBUG - < PONG b0 6e 41 9d [binary, 4 bytes]
+2025-03-28 16:26:48,656 - DEBUG - % received keepalive pong
+2025-03-28 16:26:48,656 - DEBUG - % received keepalive pong
+2025-03-28 16:27:08,676 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:08,676 - DEBUG - > PING 1d 87 16 db [binary, 4 bytes]
+2025-03-28 16:27:08,676 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:08,676 - DEBUG - > PING 18 f6 ee 61 [binary, 4 bytes]
+2025-03-28 16:27:08,677 - DEBUG - < PONG 1d 87 16 db [binary, 4 bytes]
+2025-03-28 16:27:08,677 - DEBUG - < PONG 18 f6 ee 61 [binary, 4 bytes]
+2025-03-28 16:27:08,677 - DEBUG - % received keepalive pong
+2025-03-28 16:27:08,677 - DEBUG - % received keepalive pong
+2025-03-28 16:27:28,696 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:28,696 - DEBUG - > PING 31 58 c1 6a [binary, 4 bytes]
+2025-03-28 16:27:28,696 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:28,696 - DEBUG - > PING d6 41 bb 6b [binary, 4 bytes]
+2025-03-28 16:27:28,697 - DEBUG - < PONG 31 58 c1 6a [binary, 4 bytes]
+2025-03-28 16:27:28,697 - DEBUG - < PONG d6 41 bb 6b [binary, 4 bytes]
+2025-03-28 16:27:28,697 - DEBUG - % received keepalive pong
+2025-03-28 16:27:28,697 - DEBUG - % received keepalive pong
+2025-03-28 16:27:48,717 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:48,717 - DEBUG - > PING eb 57 29 08 [binary, 4 bytes]
+2025-03-28 16:27:48,717 - DEBUG - % sending keepalive ping
+2025-03-28 16:27:48,717 - DEBUG - > PING 51 cd 18 1a [binary, 4 bytes]
+2025-03-28 16:27:48,717 - DEBUG - < PONG eb 57 29 08 [binary, 4 bytes]
+2025-03-28 16:27:48,717 - DEBUG - < PONG 51 cd 18 1a [binary, 4 bytes]
+2025-03-28 16:27:48,718 - DEBUG - % received keepalive pong
+2025-03-28 16:27:48,718 - DEBUG - % received keepalive pong
+2025-03-28 16:28:08,737 - DEBUG - % sending keepalive ping
+2025-03-28 16:28:08,737 - DEBUG - > PING 9b 29 29 00 [binary, 4 bytes]
+2025-03-28 16:28:08,737 - DEBUG - % sending keepalive ping
+2025-03-28 16:28:08,737 - DEBUG - > PING 50 e6 13 4f [binary, 4 bytes]
+2025-03-28 16:28:08,738 - DEBUG - < PONG 9b 29 29 00 [binary, 4 bytes]
+2025-03-28 16:28:08,738 - DEBUG - % received keepalive pong
+2025-03-28 16:28:08,738 - DEBUG - < PONG 50 e6 13 4f [binary, 4 bytes]
+2025-03-28 16:28:08,738 - DEBUG - % received keepalive pong
+2025-03-28 16:28:18,040 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:28:18,040 - DEBUG - = connection is CLOSING
+2025-03-28 16:28:18,040 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:28:18,040 - DEBUG - x half-closing TCP connection
+2025-03-28 16:28:18,040 - DEBUG - = connection is CLOSED
+2025-03-28 16:28:18,041 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:28:18,041 - DEBUG - = connection is CLOSING
+2025-03-28 16:28:18,041 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:28:18,041 - DEBUG - x half-closing TCP connection
+2025-03-28 16:28:18,041 - DEBUG - = connection is CLOSED
+2025-03-28 16:28:18,041 - INFO - connection closed
+2025-03-28 16:28:18,041 - INFO - connection closed
+2025-03-28 16:40:27,274 - DEBUG - = connection is CONNECTING
+2025-03-28 16:40:27,275 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:40:27,275 - DEBUG - < Host: localhost:8765
+2025-03-28 16:40:27,275 - DEBUG - < Connection: Upgrade
+2025-03-28 16:40:27,275 - DEBUG - < Pragma: no-cache
+2025-03-28 16:40:27,275 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:40:27,275 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:40:27,275 - DEBUG - < Upgrade: websocket
+2025-03-28 16:40:27,275 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:40:27,275 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:40:27,275 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:40:27,275 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:40:27,275 - DEBUG - < Sec-WebSocket-Key: GO+ZW1ka+LUGRQD8GijrYg==
+2025-03-28 16:40:27,275 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:40:27,275 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:40:27,275 - DEBUG - > Upgrade: websocket
+2025-03-28 16:40:27,275 - DEBUG - > Connection: Upgrade
+2025-03-28 16:40:27,275 - DEBUG - > Sec-WebSocket-Accept: Rt2WkwVtS2RW4Nbj5Lv/aCgik9E=
+2025-03-28 16:40:27,276 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:40:27,276 - DEBUG - > Date: Fri, 28 Mar 2025 08:40:27 GMT
+2025-03-28 16:40:27,276 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:40:27,276 - INFO - connection open
+2025-03-28 16:40:27,276 - DEBUG - = connection is OPEN
+2025-03-28 16:40:27,286 - DEBUG - = connection is CONNECTING
+2025-03-28 16:40:27,287 - DEBUG - < GET / HTTP/1.1
+2025-03-28 16:40:27,287 - DEBUG - < Host: localhost:8765
+2025-03-28 16:40:27,287 - DEBUG - < Connection: Upgrade
+2025-03-28 16:40:27,287 - DEBUG - < Pragma: no-cache
+2025-03-28 16:40:27,287 - DEBUG - < Cache-Control: no-cache
+2025-03-28 16:40:27,287 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 16:40:27,287 - DEBUG - < Upgrade: websocket
+2025-03-28 16:40:27,287 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 16:40:27,287 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 16:40:27,287 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 16:40:27,288 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 16:40:27,288 - DEBUG - < Sec-WebSocket-Key: KjmULHIAspAZsOs2PItn3w==
+2025-03-28 16:40:27,288 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 16:40:27,288 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 16:40:27,288 - DEBUG - > Upgrade: websocket
+2025-03-28 16:40:27,288 - DEBUG - > Connection: Upgrade
+2025-03-28 16:40:27,288 - DEBUG - > Sec-WebSocket-Accept: cmfRGn9UaEQ546mEVQpTHpArFkY=
+2025-03-28 16:40:27,288 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 16:40:27,288 - DEBUG - > Date: Fri, 28 Mar 2025 08:40:27 GMT
+2025-03-28 16:40:27,288 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 16:40:27,288 - INFO - connection open
+2025-03-28 16:40:27,288 - DEBUG - = connection is OPEN
+2025-03-28 16:40:47,296 - DEBUG - % sending keepalive ping
+2025-03-28 16:40:47,296 - DEBUG - > PING 6f 3b c1 12 [binary, 4 bytes]
+2025-03-28 16:40:47,297 - DEBUG - % sending keepalive ping
+2025-03-28 16:40:47,297 - DEBUG - > PING 0b e0 96 af [binary, 4 bytes]
+2025-03-28 16:40:47,297 - DEBUG - < PONG 6f 3b c1 12 [binary, 4 bytes]
+2025-03-28 16:40:47,297 - DEBUG - < PONG 0b e0 96 af [binary, 4 bytes]
+2025-03-28 16:40:47,297 - DEBUG - % received keepalive pong
+2025-03-28 16:40:47,297 - DEBUG - % received keepalive pong
+2025-03-28 16:41:07,317 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:07,317 - DEBUG - > PING ea fe a2 42 [binary, 4 bytes]
+2025-03-28 16:41:07,317 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:07,317 - DEBUG - > PING '\x12\x1f-+' [text, 4 bytes]
+2025-03-28 16:41:07,318 - DEBUG - < PONG ea fe a2 42 [binary, 4 bytes]
+2025-03-28 16:41:07,318 - DEBUG - < PONG '\x12\x1f-+' [text, 4 bytes]
+2025-03-28 16:41:07,318 - DEBUG - % received keepalive pong
+2025-03-28 16:41:07,318 - DEBUG - % received keepalive pong
+2025-03-28 16:41:27,337 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:27,337 - DEBUG - > PING 'N֡>' [text, 4 bytes]
+2025-03-28 16:41:27,338 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:27,338 - DEBUG - > PING cc 30 b8 f5 [binary, 4 bytes]
+2025-03-28 16:41:27,338 - DEBUG - < PONG 'N֡>' [text, 4 bytes]
+2025-03-28 16:41:27,338 - DEBUG - < PONG cc 30 b8 f5 [binary, 4 bytes]
+2025-03-28 16:41:27,338 - DEBUG - % received keepalive pong
+2025-03-28 16:41:27,338 - DEBUG - % received keepalive pong
+2025-03-28 16:41:47,357 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:47,357 - DEBUG - > PING 36 26 08 da [binary, 4 bytes]
+2025-03-28 16:41:47,357 - DEBUG - % sending keepalive ping
+2025-03-28 16:41:47,357 - DEBUG - > PING 70 80 9b 52 [binary, 4 bytes]
+2025-03-28 16:41:47,358 - DEBUG - < PONG 36 26 08 da [binary, 4 bytes]
+2025-03-28 16:41:47,358 - DEBUG - < PONG 70 80 9b 52 [binary, 4 bytes]
+2025-03-28 16:41:47,358 - DEBUG - % received keepalive pong
+2025-03-28 16:41:47,358 - DEBUG - % received keepalive pong
+2025-03-28 16:42:07,377 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:07,377 - DEBUG - > PING ce 43 77 b8 [binary, 4 bytes]
+2025-03-28 16:42:07,377 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:07,378 - DEBUG - > PING 97 a3 e4 e9 [binary, 4 bytes]
+2025-03-28 16:42:07,378 - DEBUG - < PONG ce 43 77 b8 [binary, 4 bytes]
+2025-03-28 16:42:07,378 - DEBUG - < PONG 97 a3 e4 e9 [binary, 4 bytes]
+2025-03-28 16:42:07,378 - DEBUG - % received keepalive pong
+2025-03-28 16:42:07,378 - DEBUG - % received keepalive pong
+2025-03-28 16:42:27,398 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:27,398 - DEBUG - > PING 'Sc&\x10' [text, 4 bytes]
+2025-03-28 16:42:27,398 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:27,398 - DEBUG - > PING 07 5f 9f 6d [binary, 4 bytes]
+2025-03-28 16:42:27,398 - DEBUG - < PONG 'Sc&\x10' [text, 4 bytes]
+2025-03-28 16:42:27,399 - DEBUG - % received keepalive pong
+2025-03-28 16:42:27,399 - DEBUG - < PONG 07 5f 9f 6d [binary, 4 bytes]
+2025-03-28 16:42:27,399 - DEBUG - % received keepalive pong
+2025-03-28 16:42:47,419 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:47,419 - DEBUG - > PING 9a a3 e1 b3 [binary, 4 bytes]
+2025-03-28 16:42:47,419 - DEBUG - % sending keepalive ping
+2025-03-28 16:42:47,419 - DEBUG - > PING bc 62 82 3b [binary, 4 bytes]
+2025-03-28 16:42:47,420 - DEBUG - < PONG 9a a3 e1 b3 [binary, 4 bytes]
+2025-03-28 16:42:47,420 - DEBUG - < PONG bc 62 82 3b [binary, 4 bytes]
+2025-03-28 16:42:47,420 - DEBUG - % received keepalive pong
+2025-03-28 16:42:47,420 - DEBUG - % received keepalive pong
+2025-03-28 16:43:07,439 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:07,439 - DEBUG - > PING a9 fe af 59 [binary, 4 bytes]
+2025-03-28 16:43:07,439 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:07,440 - DEBUG - > PING ba 92 37 68 [binary, 4 bytes]
+2025-03-28 16:43:07,440 - DEBUG - < PONG a9 fe af 59 [binary, 4 bytes]
+2025-03-28 16:43:07,440 - DEBUG - < PONG ba 92 37 68 [binary, 4 bytes]
+2025-03-28 16:43:07,440 - DEBUG - % received keepalive pong
+2025-03-28 16:43:07,440 - DEBUG - % received keepalive pong
+2025-03-28 16:43:27,459 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:27,459 - DEBUG - > PING eb 08 75 51 [binary, 4 bytes]
+2025-03-28 16:43:27,460 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:27,460 - DEBUG - > PING e0 10 a2 fe [binary, 4 bytes]
+2025-03-28 16:43:27,460 - DEBUG - < PONG eb 08 75 51 [binary, 4 bytes]
+2025-03-28 16:43:27,460 - DEBUG - < PONG e0 10 a2 fe [binary, 4 bytes]
+2025-03-28 16:43:27,460 - DEBUG - % received keepalive pong
+2025-03-28 16:43:27,460 - DEBUG - % received keepalive pong
+2025-03-28 16:43:47,480 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:47,480 - DEBUG - > PING a4 43 ed e0 [binary, 4 bytes]
+2025-03-28 16:43:47,480 - DEBUG - % sending keepalive ping
+2025-03-28 16:43:47,481 - DEBUG - > PING 38 1e 5d c1 [binary, 4 bytes]
+2025-03-28 16:43:47,481 - DEBUG - < PONG a4 43 ed e0 [binary, 4 bytes]
+2025-03-28 16:43:47,481 - DEBUG - < PONG 38 1e 5d c1 [binary, 4 bytes]
+2025-03-28 16:43:47,481 - DEBUG - % received keepalive pong
+2025-03-28 16:43:47,481 - DEBUG - % received keepalive pong
+2025-03-28 16:44:07,500 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:07,500 - DEBUG - > PING 8b c7 1a 70 [binary, 4 bytes]
+2025-03-28 16:44:07,501 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:07,501 - DEBUG - > PING d7 ef 06 04 [binary, 4 bytes]
+2025-03-28 16:44:07,501 - DEBUG - < PONG 8b c7 1a 70 [binary, 4 bytes]
+2025-03-28 16:44:07,501 - DEBUG - < PONG d7 ef 06 04 [binary, 4 bytes]
+2025-03-28 16:44:07,501 - DEBUG - % received keepalive pong
+2025-03-28 16:44:07,501 - DEBUG - % received keepalive pong
+2025-03-28 16:44:27,521 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:27,521 - DEBUG - > PING 99 66 2d a4 [binary, 4 bytes]
+2025-03-28 16:44:27,521 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:27,521 - DEBUG - > PING 1c c8 50 cd [binary, 4 bytes]
+2025-03-28 16:44:27,521 - DEBUG - < PONG 99 66 2d a4 [binary, 4 bytes]
+2025-03-28 16:44:27,522 - DEBUG - < PONG 1c c8 50 cd [binary, 4 bytes]
+2025-03-28 16:44:27,522 - DEBUG - % received keepalive pong
+2025-03-28 16:44:27,522 - DEBUG - % received keepalive pong
+2025-03-28 16:44:47,541 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:47,541 - DEBUG - > PING b4 dd eb 51 [binary, 4 bytes]
+2025-03-28 16:44:47,541 - DEBUG - % sending keepalive ping
+2025-03-28 16:44:47,541 - DEBUG - > PING b2 7a 0b ed [binary, 4 bytes]
+2025-03-28 16:44:47,542 - DEBUG - < PONG b4 dd eb 51 [binary, 4 bytes]
+2025-03-28 16:44:47,542 - DEBUG - < PONG b2 7a 0b ed [binary, 4 bytes]
+2025-03-28 16:44:47,542 - DEBUG - % received keepalive pong
+2025-03-28 16:44:47,542 - DEBUG - % received keepalive pong
+2025-03-28 16:45:07,561 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:07,561 - DEBUG - > PING 65 5f 9a 39 [binary, 4 bytes]
+2025-03-28 16:45:07,561 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:07,562 - DEBUG - > PING af b3 e9 e1 [binary, 4 bytes]
+2025-03-28 16:45:07,562 - DEBUG - < PONG 65 5f 9a 39 [binary, 4 bytes]
+2025-03-28 16:45:07,562 - DEBUG - < PONG af b3 e9 e1 [binary, 4 bytes]
+2025-03-28 16:45:07,562 - DEBUG - % received keepalive pong
+2025-03-28 16:45:07,562 - DEBUG - % received keepalive pong
+2025-03-28 16:45:27,582 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:27,583 - DEBUG - > PING 20 9f b8 2b [binary, 4 bytes]
+2025-03-28 16:45:27,583 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:27,583 - DEBUG - > PING 50 b7 3f 4d [binary, 4 bytes]
+2025-03-28 16:45:27,583 - DEBUG - < PONG 20 9f b8 2b [binary, 4 bytes]
+2025-03-28 16:45:27,583 - DEBUG - < PONG 50 b7 3f 4d [binary, 4 bytes]
+2025-03-28 16:45:27,583 - DEBUG - % received keepalive pong
+2025-03-28 16:45:27,583 - DEBUG - % received keepalive pong
+2025-03-28 16:45:47,603 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:47,603 - DEBUG - > PING 76 cf 99 f4 [binary, 4 bytes]
+2025-03-28 16:45:47,603 - DEBUG - % sending keepalive ping
+2025-03-28 16:45:47,603 - DEBUG - > PING 3f 8b 85 ba [binary, 4 bytes]
+2025-03-28 16:45:47,604 - DEBUG - < PONG 76 cf 99 f4 [binary, 4 bytes]
+2025-03-28 16:45:47,604 - DEBUG - < PONG 3f 8b 85 ba [binary, 4 bytes]
+2025-03-28 16:45:47,604 - DEBUG - % received keepalive pong
+2025-03-28 16:45:47,604 - DEBUG - % received keepalive pong
+2025-03-28 16:46:07,616 - DEBUG - % sending keepalive ping
+2025-03-28 16:46:07,616 - DEBUG - > PING ea 02 9d 3b [binary, 4 bytes]
+2025-03-28 16:46:07,616 - DEBUG - % sending keepalive ping
+2025-03-28 16:46:07,616 - DEBUG - > PING 04 98 aa 8c [binary, 4 bytes]
+2025-03-28 16:46:07,616 - DEBUG - < PONG ea 02 9d 3b [binary, 4 bytes]
+2025-03-28 16:46:07,616 - DEBUG - < PONG 04 98 aa 8c [binary, 4 bytes]
+2025-03-28 16:46:07,616 - DEBUG - % received keepalive pong
+2025-03-28 16:46:07,616 - DEBUG - % received keepalive pong
+2025-03-28 16:46:27,252 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:46:27,252 - DEBUG - = connection is CLOSING
+2025-03-28 16:46:27,252 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:46:27,252 - DEBUG - x half-closing TCP connection
+2025-03-28 16:46:27,252 - DEBUG - = connection is CLOSED
+2025-03-28 16:46:27,252 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:46:27,252 - DEBUG - = connection is CLOSING
+2025-03-28 16:46:27,252 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 16:46:27,252 - DEBUG - x half-closing TCP connection
+2025-03-28 16:46:27,253 - DEBUG - = connection is CLOSED
+2025-03-28 16:46:27,253 - INFO - connection closed
+2025-03-28 16:46:27,253 - INFO - connection closed
+2025-03-28 17:46:25,274 - DEBUG - = connection is CONNECTING
+2025-03-28 17:46:25,274 - DEBUG - < GET / HTTP/1.1
+2025-03-28 17:46:25,274 - DEBUG - < Host: localhost:8765
+2025-03-28 17:46:25,274 - DEBUG - < Connection: Upgrade
+2025-03-28 17:46:25,274 - DEBUG - < Pragma: no-cache
+2025-03-28 17:46:25,274 - DEBUG - < Cache-Control: no-cache
+2025-03-28 17:46:25,274 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 17:46:25,274 - DEBUG - < Upgrade: websocket
+2025-03-28 17:46:25,274 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 17:46:25,275 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 17:46:25,275 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 17:46:25,275 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 17:46:25,275 - DEBUG - < Sec-WebSocket-Key: m6JlUSp3TeU5ZnVK6hK8Yg==
+2025-03-28 17:46:25,275 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 17:46:25,275 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 17:46:25,275 - DEBUG - > Upgrade: websocket
+2025-03-28 17:46:25,275 - DEBUG - > Connection: Upgrade
+2025-03-28 17:46:25,275 - DEBUG - > Sec-WebSocket-Accept: htVrZx1GV27pXaWIFDzJncTparI=
+2025-03-28 17:46:25,275 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 17:46:25,275 - DEBUG - > Date: Fri, 28 Mar 2025 09:46:25 GMT
+2025-03-28 17:46:25,275 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 17:46:25,275 - INFO - connection open
+2025-03-28 17:46:25,275 - DEBUG - = connection is OPEN
+2025-03-28 17:46:25,286 - DEBUG - = connection is CONNECTING
+2025-03-28 17:46:25,286 - DEBUG - < GET / HTTP/1.1
+2025-03-28 17:46:25,286 - DEBUG - < Host: localhost:8765
+2025-03-28 17:46:25,286 - DEBUG - < Connection: Upgrade
+2025-03-28 17:46:25,286 - DEBUG - < Pragma: no-cache
+2025-03-28 17:46:25,286 - DEBUG - < Cache-Control: no-cache
+2025-03-28 17:46:25,286 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 17:46:25,286 - DEBUG - < Upgrade: websocket
+2025-03-28 17:46:25,286 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 17:46:25,286 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 17:46:25,286 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 17:46:25,286 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 17:46:25,286 - DEBUG - < Sec-WebSocket-Key: wpDG4awIYmnVZ122ktsm3A==
+2025-03-28 17:46:25,286 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 17:46:25,287 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 17:46:25,287 - DEBUG - > Upgrade: websocket
+2025-03-28 17:46:25,287 - DEBUG - > Connection: Upgrade
+2025-03-28 17:46:25,287 - DEBUG - > Sec-WebSocket-Accept: EGADXPShAnnxy5W8VwsakeMDj2U=
+2025-03-28 17:46:25,287 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 17:46:25,287 - DEBUG - > Date: Fri, 28 Mar 2025 09:46:25 GMT
+2025-03-28 17:46:25,287 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 17:46:25,287 - INFO - connection open
+2025-03-28 17:46:25,287 - DEBUG - = connection is OPEN
+2025-03-28 17:46:45,295 - DEBUG - % sending keepalive ping
+2025-03-28 17:46:45,295 - DEBUG - > PING cb 67 48 16 [binary, 4 bytes]
+2025-03-28 17:46:45,295 - DEBUG - % sending keepalive ping
+2025-03-28 17:46:45,295 - DEBUG - > PING a4 f3 e5 60 [binary, 4 bytes]
+2025-03-28 17:46:45,296 - DEBUG - < PONG cb 67 48 16 [binary, 4 bytes]
+2025-03-28 17:46:45,296 - DEBUG - < PONG a4 f3 e5 60 [binary, 4 bytes]
+2025-03-28 17:46:45,296 - DEBUG - % received keepalive pong
+2025-03-28 17:46:45,296 - DEBUG - % received keepalive pong
+2025-03-28 17:47:05,315 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:05,315 - DEBUG - > PING 81 e2 b3 72 [binary, 4 bytes]
+2025-03-28 17:47:05,315 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:05,315 - DEBUG - > PING 46 9c e3 fd [binary, 4 bytes]
+2025-03-28 17:47:05,316 - DEBUG - < PONG 81 e2 b3 72 [binary, 4 bytes]
+2025-03-28 17:47:05,316 - DEBUG - < PONG 46 9c e3 fd [binary, 4 bytes]
+2025-03-28 17:47:05,316 - DEBUG - % received keepalive pong
+2025-03-28 17:47:05,316 - DEBUG - % received keepalive pong
+2025-03-28 17:47:25,335 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:25,335 - DEBUG - > PING 3e 22 7e 96 [binary, 4 bytes]
+2025-03-28 17:47:25,335 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:25,335 - DEBUG - > PING cf e1 59 d5 [binary, 4 bytes]
+2025-03-28 17:47:25,336 - DEBUG - < PONG 3e 22 7e 96 [binary, 4 bytes]
+2025-03-28 17:47:25,336 - DEBUG - < PONG cf e1 59 d5 [binary, 4 bytes]
+2025-03-28 17:47:25,336 - DEBUG - % received keepalive pong
+2025-03-28 17:47:25,336 - DEBUG - % received keepalive pong
+2025-03-28 17:47:45,355 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:45,355 - DEBUG - > PING 41 02 b5 e6 [binary, 4 bytes]
+2025-03-28 17:47:45,355 - DEBUG - % sending keepalive ping
+2025-03-28 17:47:45,355 - DEBUG - > PING a6 69 d9 5b [binary, 4 bytes]
+2025-03-28 17:47:45,356 - DEBUG - < PONG 41 02 b5 e6 [binary, 4 bytes]
+2025-03-28 17:47:45,356 - DEBUG - < PONG a6 69 d9 5b [binary, 4 bytes]
+2025-03-28 17:47:45,356 - DEBUG - % received keepalive pong
+2025-03-28 17:47:45,356 - DEBUG - % received keepalive pong
+2025-03-28 17:48:05,375 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:05,375 - DEBUG - > PING c3 7e 27 9e [binary, 4 bytes]
+2025-03-28 17:48:05,375 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:05,375 - DEBUG - > PING 93 0d d8 5b [binary, 4 bytes]
+2025-03-28 17:48:05,376 - DEBUG - < PONG c3 7e 27 9e [binary, 4 bytes]
+2025-03-28 17:48:05,376 - DEBUG - < PONG 93 0d d8 5b [binary, 4 bytes]
+2025-03-28 17:48:05,376 - DEBUG - % received keepalive pong
+2025-03-28 17:48:05,376 - DEBUG - % received keepalive pong
+2025-03-28 17:48:25,395 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:25,395 - DEBUG - > PING dc fb 15 0a [binary, 4 bytes]
+2025-03-28 17:48:25,396 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:25,396 - DEBUG - > PING 42 3a 80 ad [binary, 4 bytes]
+2025-03-28 17:48:25,396 - DEBUG - < PONG dc fb 15 0a [binary, 4 bytes]
+2025-03-28 17:48:25,396 - DEBUG - < PONG 42 3a 80 ad [binary, 4 bytes]
+2025-03-28 17:48:25,396 - DEBUG - % received keepalive pong
+2025-03-28 17:48:25,396 - DEBUG - % received keepalive pong
+2025-03-28 17:48:45,416 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:45,416 - DEBUG - > PING 'ΒC"' [text, 4 bytes]
+2025-03-28 17:48:45,416 - DEBUG - % sending keepalive ping
+2025-03-28 17:48:45,417 - DEBUG - > PING f3 21 c0 9a [binary, 4 bytes]
+2025-03-28 17:48:45,417 - DEBUG - < PONG 'ΒC"' [text, 4 bytes]
+2025-03-28 17:48:45,417 - DEBUG - % received keepalive pong
+2025-03-28 17:48:45,417 - DEBUG - < PONG f3 21 c0 9a [binary, 4 bytes]
+2025-03-28 17:48:45,417 - DEBUG - % received keepalive pong
+2025-03-28 17:49:05,436 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:05,436 - DEBUG - > PING 80 d8 f9 51 [binary, 4 bytes]
+2025-03-28 17:49:05,437 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:05,437 - DEBUG - > PING c9 95 bc be [binary, 4 bytes]
+2025-03-28 17:49:05,437 - DEBUG - < PONG 80 d8 f9 51 [binary, 4 bytes]
+2025-03-28 17:49:05,437 - DEBUG - % received keepalive pong
+2025-03-28 17:49:05,437 - DEBUG - < PONG c9 95 bc be [binary, 4 bytes]
+2025-03-28 17:49:05,437 - DEBUG - % received keepalive pong
+2025-03-28 17:49:25,457 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:25,457 - DEBUG - > PING '\x1dHeF' [text, 4 bytes]
+2025-03-28 17:49:25,458 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:25,458 - DEBUG - > PING b6 f2 38 b7 [binary, 4 bytes]
+2025-03-28 17:49:25,458 - DEBUG - < PONG '\x1dHeF' [text, 4 bytes]
+2025-03-28 17:49:25,458 - DEBUG - < PONG b6 f2 38 b7 [binary, 4 bytes]
+2025-03-28 17:49:25,458 - DEBUG - % received keepalive pong
+2025-03-28 17:49:25,458 - DEBUG - % received keepalive pong
+2025-03-28 17:49:45,478 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:45,478 - DEBUG - > PING 2c 71 f1 79 [binary, 4 bytes]
+2025-03-28 17:49:45,478 - DEBUG - % sending keepalive ping
+2025-03-28 17:49:45,479 - DEBUG - > PING 07 24 bb c7 [binary, 4 bytes]
+2025-03-28 17:49:45,479 - DEBUG - < PONG 2c 71 f1 79 [binary, 4 bytes]
+2025-03-28 17:49:45,479 - DEBUG - < PONG 07 24 bb c7 [binary, 4 bytes]
+2025-03-28 17:49:45,479 - DEBUG - % received keepalive pong
+2025-03-28 17:49:45,479 - DEBUG - % received keepalive pong
+2025-03-28 17:50:05,498 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:05,498 - DEBUG - > PING d7 df f5 f5 [binary, 4 bytes]
+2025-03-28 17:50:05,498 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:05,499 - DEBUG - > PING 7d d6 e8 c9 [binary, 4 bytes]
+2025-03-28 17:50:05,499 - DEBUG - < PONG d7 df f5 f5 [binary, 4 bytes]
+2025-03-28 17:50:05,499 - DEBUG - < PONG 7d d6 e8 c9 [binary, 4 bytes]
+2025-03-28 17:50:05,499 - DEBUG - % received keepalive pong
+2025-03-28 17:50:05,499 - DEBUG - % received keepalive pong
+2025-03-28 17:50:25,519 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:25,519 - DEBUG - > PING 38 a8 d3 0a [binary, 4 bytes]
+2025-03-28 17:50:25,519 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:25,519 - DEBUG - > PING 14 b2 3b 2b [binary, 4 bytes]
+2025-03-28 17:50:25,519 - DEBUG - < PONG 38 a8 d3 0a [binary, 4 bytes]
+2025-03-28 17:50:25,519 - DEBUG - < PONG 14 b2 3b 2b [binary, 4 bytes]
+2025-03-28 17:50:25,520 - DEBUG - % received keepalive pong
+2025-03-28 17:50:25,520 - DEBUG - % received keepalive pong
+2025-03-28 17:50:45,539 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:45,539 - DEBUG - > PING 2a 3e 7f f8 [binary, 4 bytes]
+2025-03-28 17:50:45,539 - DEBUG - % sending keepalive ping
+2025-03-28 17:50:45,540 - DEBUG - > PING 56 64 bb c0 [binary, 4 bytes]
+2025-03-28 17:50:45,540 - DEBUG - < PONG 2a 3e 7f f8 [binary, 4 bytes]
+2025-03-28 17:50:45,540 - DEBUG - < PONG 56 64 bb c0 [binary, 4 bytes]
+2025-03-28 17:50:45,540 - DEBUG - % received keepalive pong
+2025-03-28 17:50:45,540 - DEBUG - % received keepalive pong
+2025-03-28 17:51:05,559 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:05,559 - DEBUG - > PING 8d 9d 61 b7 [binary, 4 bytes]
+2025-03-28 17:51:05,559 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:05,560 - DEBUG - > PING c1 34 1e b3 [binary, 4 bytes]
+2025-03-28 17:51:05,560 - DEBUG - < PONG 8d 9d 61 b7 [binary, 4 bytes]
+2025-03-28 17:51:05,560 - DEBUG - < PONG c1 34 1e b3 [binary, 4 bytes]
+2025-03-28 17:51:05,560 - DEBUG - % received keepalive pong
+2025-03-28 17:51:05,560 - DEBUG - % received keepalive pong
+2025-03-28 17:51:25,579 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:25,580 - DEBUG - > PING 17 43 20 cb [binary, 4 bytes]
+2025-03-28 17:51:25,580 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:25,580 - DEBUG - > PING c2 fb a8 50 [binary, 4 bytes]
+2025-03-28 17:51:25,580 - DEBUG - < PONG 17 43 20 cb [binary, 4 bytes]
+2025-03-28 17:51:25,580 - DEBUG - < PONG c2 fb a8 50 [binary, 4 bytes]
+2025-03-28 17:51:25,580 - DEBUG - % received keepalive pong
+2025-03-28 17:51:25,580 - DEBUG - % received keepalive pong
+2025-03-28 17:51:45,600 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:45,600 - DEBUG - > PING a0 26 1f 48 [binary, 4 bytes]
+2025-03-28 17:51:45,600 - DEBUG - % sending keepalive ping
+2025-03-28 17:51:45,601 - DEBUG - > PING 77 f6 dc 3b [binary, 4 bytes]
+2025-03-28 17:51:45,601 - DEBUG - < PONG a0 26 1f 48 [binary, 4 bytes]
+2025-03-28 17:51:45,601 - DEBUG - % received keepalive pong
+2025-03-28 17:51:45,601 - DEBUG - < PONG 77 f6 dc 3b [binary, 4 bytes]
+2025-03-28 17:51:45,601 - DEBUG - % received keepalive pong
+2025-03-28 17:52:05,621 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:05,621 - DEBUG - > PING 84 05 40 ad [binary, 4 bytes]
+2025-03-28 17:52:05,621 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:05,621 - DEBUG - > PING e6 e5 a4 cd [binary, 4 bytes]
+2025-03-28 17:52:05,622 - DEBUG - < PONG 84 05 40 ad [binary, 4 bytes]
+2025-03-28 17:52:05,622 - DEBUG - < PONG e6 e5 a4 cd [binary, 4 bytes]
+2025-03-28 17:52:05,622 - DEBUG - % received keepalive pong
+2025-03-28 17:52:05,622 - DEBUG - % received keepalive pong
+2025-03-28 17:52:25,641 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:25,641 - DEBUG - > PING f2 d8 8e 1a [binary, 4 bytes]
+2025-03-28 17:52:25,642 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:25,642 - DEBUG - > PING dd 5e 07 9c [binary, 4 bytes]
+2025-03-28 17:52:25,642 - DEBUG - < PONG f2 d8 8e 1a [binary, 4 bytes]
+2025-03-28 17:52:25,642 - DEBUG - < PONG dd 5e 07 9c [binary, 4 bytes]
+2025-03-28 17:52:25,642 - DEBUG - % received keepalive pong
+2025-03-28 17:52:25,642 - DEBUG - % received keepalive pong
+2025-03-28 17:52:45,662 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:45,662 - DEBUG - > PING b9 69 8c 90 [binary, 4 bytes]
+2025-03-28 17:52:45,663 - DEBUG - % sending keepalive ping
+2025-03-28 17:52:45,663 - DEBUG - > PING 2a 95 75 a8 [binary, 4 bytes]
+2025-03-28 17:52:45,663 - DEBUG - < PONG b9 69 8c 90 [binary, 4 bytes]
+2025-03-28 17:52:45,663 - DEBUG - < PONG 2a 95 75 a8 [binary, 4 bytes]
+2025-03-28 17:52:45,663 - DEBUG - % received keepalive pong
+2025-03-28 17:52:45,663 - DEBUG - % received keepalive pong
+2025-03-28 17:53:05,683 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:05,683 - DEBUG - > PING ff 19 0e 4a [binary, 4 bytes]
+2025-03-28 17:53:05,684 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:05,684 - DEBUG - > PING '\x07x\x1cr' [text, 4 bytes]
+2025-03-28 17:53:05,684 - DEBUG - < PONG ff 19 0e 4a [binary, 4 bytes]
+2025-03-28 17:53:05,684 - DEBUG - < PONG '\x07x\x1cr' [text, 4 bytes]
+2025-03-28 17:53:05,684 - DEBUG - % received keepalive pong
+2025-03-28 17:53:05,684 - DEBUG - % received keepalive pong
+2025-03-28 17:53:25,704 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:25,704 - DEBUG - > PING 7b c8 3b b5 [binary, 4 bytes]
+2025-03-28 17:53:25,704 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:25,705 - DEBUG - > PING e2 b3 75 25 [binary, 4 bytes]
+2025-03-28 17:53:25,705 - DEBUG - < PONG 7b c8 3b b5 [binary, 4 bytes]
+2025-03-28 17:53:25,705 - DEBUG - % received keepalive pong
+2025-03-28 17:53:25,705 - DEBUG - < PONG e2 b3 75 25 [binary, 4 bytes]
+2025-03-28 17:53:25,705 - DEBUG - % received keepalive pong
+2025-03-28 17:53:45,725 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:45,725 - DEBUG - > PING 95 82 07 c8 [binary, 4 bytes]
+2025-03-28 17:53:45,725 - DEBUG - % sending keepalive ping
+2025-03-28 17:53:45,725 - DEBUG - > PING a6 fd e4 76 [binary, 4 bytes]
+2025-03-28 17:53:45,725 - DEBUG - < PONG 95 82 07 c8 [binary, 4 bytes]
+2025-03-28 17:53:45,725 - DEBUG - < PONG a6 fd e4 76 [binary, 4 bytes]
+2025-03-28 17:53:45,725 - DEBUG - % received keepalive pong
+2025-03-28 17:53:45,725 - DEBUG - % received keepalive pong
+2025-03-28 17:53:55,258 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 17:53:55,258 - DEBUG - = connection is CLOSING
+2025-03-28 17:53:55,258 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 17:53:55,258 - DEBUG - x half-closing TCP connection
+2025-03-28 17:53:55,259 - DEBUG - = connection is CLOSED
+2025-03-28 17:53:55,259 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 17:53:55,259 - DEBUG - = connection is CLOSING
+2025-03-28 17:53:55,259 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 17:53:55,259 - DEBUG - x half-closing TCP connection
+2025-03-28 17:53:55,259 - DEBUG - = connection is CLOSED
+2025-03-28 17:53:55,259 - INFO - connection closed
+2025-03-28 17:53:55,259 - INFO - connection closed
+2025-03-28 17:54:54,886 - DEBUG - = connection is CONNECTING
+2025-03-28 17:54:54,887 - DEBUG - < GET / HTTP/1.1
+2025-03-28 17:54:54,887 - DEBUG - < Host: localhost:8765
+2025-03-28 17:54:54,887 - DEBUG - < Connection: Upgrade
+2025-03-28 17:54:54,887 - DEBUG - < Pragma: no-cache
+2025-03-28 17:54:54,887 - DEBUG - < Cache-Control: no-cache
+2025-03-28 17:54:54,887 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 17:54:54,887 - DEBUG - < Upgrade: websocket
+2025-03-28 17:54:54,887 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 17:54:54,887 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 17:54:54,887 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 17:54:54,887 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 17:54:54,887 - DEBUG - < Sec-WebSocket-Key: czV/kB4qMH3I3EjGUXg+aQ==
+2025-03-28 17:54:54,887 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 17:54:54,888 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 17:54:54,888 - DEBUG - > Upgrade: websocket
+2025-03-28 17:54:54,888 - DEBUG - > Connection: Upgrade
+2025-03-28 17:54:54,888 - DEBUG - > Sec-WebSocket-Accept: bKJODrFYxXxUXryvbJHVLjDsqwU=
+2025-03-28 17:54:54,888 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 17:54:54,888 - DEBUG - > Date: Fri, 28 Mar 2025 09:54:54 GMT
+2025-03-28 17:54:54,888 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 17:54:54,888 - INFO - connection open
+2025-03-28 17:54:54,888 - DEBUG - = connection is OPEN
+2025-03-28 17:54:54,899 - DEBUG - = connection is CONNECTING
+2025-03-28 17:54:54,900 - DEBUG - < GET / HTTP/1.1
+2025-03-28 17:54:54,900 - DEBUG - < Host: localhost:8765
+2025-03-28 17:54:54,900 - DEBUG - < Connection: Upgrade
+2025-03-28 17:54:54,900 - DEBUG - < Pragma: no-cache
+2025-03-28 17:54:54,900 - DEBUG - < Cache-Control: no-cache
+2025-03-28 17:54:54,900 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 17:54:54,900 - DEBUG - < Upgrade: websocket
+2025-03-28 17:54:54,900 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 17:54:54,900 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 17:54:54,900 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 17:54:54,900 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 17:54:54,900 - DEBUG - < Sec-WebSocket-Key: ZaxVut/MwsaTJgvfsW1R8g==
+2025-03-28 17:54:54,900 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 17:54:54,900 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 17:54:54,900 - DEBUG - > Upgrade: websocket
+2025-03-28 17:54:54,900 - DEBUG - > Connection: Upgrade
+2025-03-28 17:54:54,900 - DEBUG - > Sec-WebSocket-Accept: bxAMDuBootBZfFXAka3RpIM0ijc=
+2025-03-28 17:54:54,900 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 17:54:54,900 - DEBUG - > Date: Fri, 28 Mar 2025 09:54:54 GMT
+2025-03-28 17:54:54,900 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 17:54:54,901 - INFO - connection open
+2025-03-28 17:54:54,901 - DEBUG - = connection is OPEN
+2025-03-28 17:55:14,908 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:14,908 - DEBUG - > PING 'i%*?' [text, 4 bytes]
+2025-03-28 17:55:14,909 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:14,909 - DEBUG - > PING b8 e4 63 df [binary, 4 bytes]
+2025-03-28 17:55:14,909 - DEBUG - < PONG 'i%*?' [text, 4 bytes]
+2025-03-28 17:55:14,909 - DEBUG - % received keepalive pong
+2025-03-28 17:55:14,909 - DEBUG - < PONG b8 e4 63 df [binary, 4 bytes]
+2025-03-28 17:55:14,909 - DEBUG - % received keepalive pong
+2025-03-28 17:55:34,929 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:34,929 - DEBUG - > PING be 4f ae 78 [binary, 4 bytes]
+2025-03-28 17:55:34,930 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:34,930 - DEBUG - > PING ce 44 92 2c [binary, 4 bytes]
+2025-03-28 17:55:34,930 - DEBUG - < PONG be 4f ae 78 [binary, 4 bytes]
+2025-03-28 17:55:34,930 - DEBUG - < PONG ce 44 92 2c [binary, 4 bytes]
+2025-03-28 17:55:34,930 - DEBUG - % received keepalive pong
+2025-03-28 17:55:34,930 - DEBUG - % received keepalive pong
+2025-03-28 17:55:54,949 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:54,956 - DEBUG - > PING 9f 20 ff e4 [binary, 4 bytes]
+2025-03-28 17:55:54,956 - DEBUG - % sending keepalive ping
+2025-03-28 17:55:54,956 - DEBUG - > PING 3e 7f f4 c9 [binary, 4 bytes]
+2025-03-28 17:55:54,956 - DEBUG - < PONG 9f 20 ff e4 [binary, 4 bytes]
+2025-03-28 17:55:54,956 - DEBUG - < PONG 3e 7f f4 c9 [binary, 4 bytes]
+2025-03-28 17:55:54,956 - DEBUG - % received keepalive pong
+2025-03-28 17:55:54,957 - DEBUG - % received keepalive pong
+2025-03-28 17:56:14,976 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:14,976 - DEBUG - > PING e9 b8 52 40 [binary, 4 bytes]
+2025-03-28 17:56:14,977 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:14,977 - DEBUG - > PING d4 78 9b 9c [binary, 4 bytes]
+2025-03-28 17:56:14,977 - DEBUG - < PONG e9 b8 52 40 [binary, 4 bytes]
+2025-03-28 17:56:14,977 - DEBUG - < PONG d4 78 9b 9c [binary, 4 bytes]
+2025-03-28 17:56:14,977 - DEBUG - % received keepalive pong
+2025-03-28 17:56:14,977 - DEBUG - % received keepalive pong
+2025-03-28 17:56:34,997 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:34,997 - DEBUG - > PING d4 44 80 f9 [binary, 4 bytes]
+2025-03-28 17:56:34,997 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:34,998 - DEBUG - > PING c1 e0 4b 34 [binary, 4 bytes]
+2025-03-28 17:56:34,998 - DEBUG - < PONG d4 44 80 f9 [binary, 4 bytes]
+2025-03-28 17:56:34,998 - DEBUG - < PONG c1 e0 4b 34 [binary, 4 bytes]
+2025-03-28 17:56:34,998 - DEBUG - % received keepalive pong
+2025-03-28 17:56:34,998 - DEBUG - % received keepalive pong
+2025-03-28 17:56:55,018 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:55,018 - DEBUG - > PING 74 0d 9b 5f [binary, 4 bytes]
+2025-03-28 17:56:55,018 - DEBUG - % sending keepalive ping
+2025-03-28 17:56:55,018 - DEBUG - > PING 31 4d 97 83 [binary, 4 bytes]
+2025-03-28 17:56:55,018 - DEBUG - < PONG 74 0d 9b 5f [binary, 4 bytes]
+2025-03-28 17:56:55,019 - DEBUG - < PONG 31 4d 97 83 [binary, 4 bytes]
+2025-03-28 17:56:55,019 - DEBUG - % received keepalive pong
+2025-03-28 17:56:55,019 - DEBUG - % received keepalive pong
+2025-03-28 17:57:15,038 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:15,038 - DEBUG - > PING c7 2d af 70 [binary, 4 bytes]
+2025-03-28 17:57:15,038 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:15,038 - DEBUG - > PING e1 26 90 a8 [binary, 4 bytes]
+2025-03-28 17:57:15,039 - DEBUG - < PONG c7 2d af 70 [binary, 4 bytes]
+2025-03-28 17:57:15,039 - DEBUG - < PONG e1 26 90 a8 [binary, 4 bytes]
+2025-03-28 17:57:15,039 - DEBUG - % received keepalive pong
+2025-03-28 17:57:15,039 - DEBUG - % received keepalive pong
+2025-03-28 17:57:35,058 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:35,059 - DEBUG - > PING 50 cb be ff [binary, 4 bytes]
+2025-03-28 17:57:35,059 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:35,059 - DEBUG - > PING 2b f6 77 c9 [binary, 4 bytes]
+2025-03-28 17:57:35,059 - DEBUG - < PONG 50 cb be ff [binary, 4 bytes]
+2025-03-28 17:57:35,059 - DEBUG - < PONG 2b f6 77 c9 [binary, 4 bytes]
+2025-03-28 17:57:35,059 - DEBUG - % received keepalive pong
+2025-03-28 17:57:35,059 - DEBUG - % received keepalive pong
+2025-03-28 17:57:55,079 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:55,079 - DEBUG - > PING 96 a4 bd 79 [binary, 4 bytes]
+2025-03-28 17:57:55,080 - DEBUG - % sending keepalive ping
+2025-03-28 17:57:55,080 - DEBUG - > PING 3c 26 69 f1 [binary, 4 bytes]
+2025-03-28 17:57:55,080 - DEBUG - < PONG 96 a4 bd 79 [binary, 4 bytes]
+2025-03-28 17:57:55,080 - DEBUG - < PONG 3c 26 69 f1 [binary, 4 bytes]
+2025-03-28 17:57:55,080 - DEBUG - % received keepalive pong
+2025-03-28 17:57:55,080 - DEBUG - % received keepalive pong
+2025-03-28 17:58:15,099 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:15,099 - DEBUG - > PING c7 39 f1 25 [binary, 4 bytes]
+2025-03-28 17:58:15,100 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:15,100 - DEBUG - > PING c8 77 ef 10 [binary, 4 bytes]
+2025-03-28 17:58:15,100 - DEBUG - < PONG c7 39 f1 25 [binary, 4 bytes]
+2025-03-28 17:58:15,100 - DEBUG - < PONG c8 77 ef 10 [binary, 4 bytes]
+2025-03-28 17:58:15,100 - DEBUG - % received keepalive pong
+2025-03-28 17:58:15,100 - DEBUG - % received keepalive pong
+2025-03-28 17:58:35,120 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:35,120 - DEBUG - > PING 2a 79 ae 48 [binary, 4 bytes]
+2025-03-28 17:58:35,121 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:35,121 - DEBUG - > PING b4 fb ee 25 [binary, 4 bytes]
+2025-03-28 17:58:35,121 - DEBUG - < PONG 2a 79 ae 48 [binary, 4 bytes]
+2025-03-28 17:58:35,121 - DEBUG - < PONG b4 fb ee 25 [binary, 4 bytes]
+2025-03-28 17:58:35,121 - DEBUG - % received keepalive pong
+2025-03-28 17:58:35,121 - DEBUG - % received keepalive pong
+2025-03-28 17:58:55,140 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:55,140 - DEBUG - > PING 88 f1 94 c2 [binary, 4 bytes]
+2025-03-28 17:58:55,140 - DEBUG - % sending keepalive ping
+2025-03-28 17:58:55,141 - DEBUG - > PING 29 54 69 e1 [binary, 4 bytes]
+2025-03-28 17:58:55,141 - DEBUG - < PONG 88 f1 94 c2 [binary, 4 bytes]
+2025-03-28 17:58:55,141 - DEBUG - < PONG 29 54 69 e1 [binary, 4 bytes]
+2025-03-28 17:58:55,141 - DEBUG - % received keepalive pong
+2025-03-28 17:58:55,141 - DEBUG - % received keepalive pong
+2025-03-28 17:59:15,160 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:15,160 - DEBUG - > PING 64 f7 bf 58 [binary, 4 bytes]
+2025-03-28 17:59:15,160 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:15,160 - DEBUG - > PING 84 9e 0b 77 [binary, 4 bytes]
+2025-03-28 17:59:15,161 - DEBUG - < PONG 64 f7 bf 58 [binary, 4 bytes]
+2025-03-28 17:59:15,161 - DEBUG - % received keepalive pong
+2025-03-28 17:59:15,161 - DEBUG - < PONG 84 9e 0b 77 [binary, 4 bytes]
+2025-03-28 17:59:15,161 - DEBUG - % received keepalive pong
+2025-03-28 17:59:35,180 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:35,180 - DEBUG - > PING 96 4f 60 ff [binary, 4 bytes]
+2025-03-28 17:59:35,181 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:35,181 - DEBUG - > PING f8 21 50 14 [binary, 4 bytes]
+2025-03-28 17:59:35,181 - DEBUG - < PONG 96 4f 60 ff [binary, 4 bytes]
+2025-03-28 17:59:35,181 - DEBUG - < PONG f8 21 50 14 [binary, 4 bytes]
+2025-03-28 17:59:35,181 - DEBUG - % received keepalive pong
+2025-03-28 17:59:35,181 - DEBUG - % received keepalive pong
+2025-03-28 17:59:55,200 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:55,200 - DEBUG - > PING 45 5b 84 5c [binary, 4 bytes]
+2025-03-28 17:59:55,201 - DEBUG - % sending keepalive ping
+2025-03-28 17:59:55,201 - DEBUG - > PING 99 2e 85 69 [binary, 4 bytes]
+2025-03-28 17:59:55,201 - DEBUG - < PONG 45 5b 84 5c [binary, 4 bytes]
+2025-03-28 17:59:55,202 - DEBUG - < PONG 99 2e 85 69 [binary, 4 bytes]
+2025-03-28 17:59:55,202 - DEBUG - % received keepalive pong
+2025-03-28 17:59:55,202 - DEBUG - % received keepalive pong
+2025-03-28 18:00:15,221 - DEBUG - % sending keepalive ping
+2025-03-28 18:00:15,221 - DEBUG - > PING 68 19 e0 52 [binary, 4 bytes]
+2025-03-28 18:00:15,221 - DEBUG - % sending keepalive ping
+2025-03-28 18:00:15,221 - DEBUG - > PING 3b 9a 3c 56 [binary, 4 bytes]
+2025-03-28 18:00:15,222 - DEBUG - < PONG 68 19 e0 52 [binary, 4 bytes]
+2025-03-28 18:00:15,222 - DEBUG - < PONG 3b 9a 3c 56 [binary, 4 bytes]
+2025-03-28 18:00:15,222 - DEBUG - % received keepalive pong
+2025-03-28 18:00:15,222 - DEBUG - % received keepalive pong
+2025-03-28 18:00:35,241 - DEBUG - % sending keepalive ping
+2025-03-28 18:00:35,241 - DEBUG - > PING 59 3b ac af [binary, 4 bytes]
+2025-03-28 18:00:35,242 - DEBUG - % sending keepalive ping
+2025-03-28 18:00:35,242 - DEBUG - > PING e4 55 47 e1 [binary, 4 bytes]
+2025-03-28 18:00:35,242 - DEBUG - < PONG 59 3b ac af [binary, 4 bytes]
+2025-03-28 18:00:35,242 - DEBUG - < PONG e4 55 47 e1 [binary, 4 bytes]
+2025-03-28 18:00:35,242 - DEBUG - % received keepalive pong
+2025-03-28 18:00:35,242 - DEBUG - % received keepalive pong
+2025-03-28 18:00:54,865 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:00:54,866 - DEBUG - = connection is CLOSING
+2025-03-28 18:00:54,866 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:00:54,866 - DEBUG - x half-closing TCP connection
+2025-03-28 18:00:54,866 - DEBUG - = connection is CLOSED
+2025-03-28 18:00:54,866 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:00:54,866 - DEBUG - = connection is CLOSING
+2025-03-28 18:00:54,866 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:00:54,866 - DEBUG - x half-closing TCP connection
+2025-03-28 18:00:54,866 - DEBUG - = connection is CLOSED
+2025-03-28 18:00:54,867 - INFO - connection closed
+2025-03-28 18:00:54,867 - INFO - connection closed
+2025-03-28 18:06:22,644 - DEBUG - = connection is CONNECTING
+2025-03-28 18:06:22,644 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:06:22,645 - DEBUG - < Host: localhost:8765
+2025-03-28 18:06:22,645 - DEBUG - < Connection: Upgrade
+2025-03-28 18:06:22,645 - DEBUG - < Pragma: no-cache
+2025-03-28 18:06:22,645 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:06:22,645 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:06:22,645 - DEBUG - < Upgrade: websocket
+2025-03-28 18:06:22,645 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:06:22,645 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:06:22,645 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:06:22,645 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:06:22,645 - DEBUG - < Sec-WebSocket-Key: As9EiJiHCppvHmuI7R+lFA==
+2025-03-28 18:06:22,645 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:06:22,645 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:06:22,645 - DEBUG - > Upgrade: websocket
+2025-03-28 18:06:22,645 - DEBUG - > Connection: Upgrade
+2025-03-28 18:06:22,645 - DEBUG - > Sec-WebSocket-Accept: Mz2l83dBc063vZBVxejg7QuraLw=
+2025-03-28 18:06:22,645 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:06:22,645 - DEBUG - > Date: Fri, 28 Mar 2025 10:06:22 GMT
+2025-03-28 18:06:22,646 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:06:22,646 - INFO - connection open
+2025-03-28 18:06:22,646 - DEBUG - = connection is OPEN
+2025-03-28 18:06:22,657 - DEBUG - = connection is CONNECTING
+2025-03-28 18:06:22,657 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:06:22,657 - DEBUG - < Host: localhost:8765
+2025-03-28 18:06:22,658 - DEBUG - < Connection: Upgrade
+2025-03-28 18:06:22,658 - DEBUG - < Pragma: no-cache
+2025-03-28 18:06:22,658 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:06:22,658 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:06:22,658 - DEBUG - < Upgrade: websocket
+2025-03-28 18:06:22,658 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:06:22,658 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:06:22,658 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:06:22,658 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:06:22,658 - DEBUG - < Sec-WebSocket-Key: Y9uYOTzbKv0L60UqCAAd/A==
+2025-03-28 18:06:22,658 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:06:22,658 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:06:22,658 - DEBUG - > Upgrade: websocket
+2025-03-28 18:06:22,658 - DEBUG - > Connection: Upgrade
+2025-03-28 18:06:22,658 - DEBUG - > Sec-WebSocket-Accept: JBAItj/TSlEyiF1Ge2OpxhuuT0o=
+2025-03-28 18:06:22,658 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:06:22,658 - DEBUG - > Date: Fri, 28 Mar 2025 10:06:22 GMT
+2025-03-28 18:06:22,658 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:06:22,658 - INFO - connection open
+2025-03-28 18:06:22,658 - DEBUG - = connection is OPEN
+2025-03-28 18:06:42,666 - DEBUG - % sending keepalive ping
+2025-03-28 18:06:42,666 - DEBUG - > PING ' I\x058' [text, 4 bytes]
+2025-03-28 18:06:42,667 - DEBUG - % sending keepalive ping
+2025-03-28 18:06:42,667 - DEBUG - > PING 67 64 fe b0 [binary, 4 bytes]
+2025-03-28 18:06:42,667 - DEBUG - < PONG ' I\x058' [text, 4 bytes]
+2025-03-28 18:06:42,667 - DEBUG - < PONG 67 64 fe b0 [binary, 4 bytes]
+2025-03-28 18:06:42,667 - DEBUG - % received keepalive pong
+2025-03-28 18:06:42,667 - DEBUG - % received keepalive pong
+2025-03-28 18:07:02,687 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:02,687 - DEBUG - > PING f4 40 4d af [binary, 4 bytes]
+2025-03-28 18:07:02,688 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:02,688 - DEBUG - > PING 8e 90 94 fe [binary, 4 bytes]
+2025-03-28 18:07:02,688 - DEBUG - < PONG f4 40 4d af [binary, 4 bytes]
+2025-03-28 18:07:02,688 - DEBUG - < PONG 8e 90 94 fe [binary, 4 bytes]
+2025-03-28 18:07:02,688 - DEBUG - % received keepalive pong
+2025-03-28 18:07:02,688 - DEBUG - % received keepalive pong
+2025-03-28 18:07:22,708 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:22,708 - DEBUG - > PING 45 52 9f 1c [binary, 4 bytes]
+2025-03-28 18:07:22,709 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:22,709 - DEBUG - > PING 0e ff 1b 3c [binary, 4 bytes]
+2025-03-28 18:07:22,709 - DEBUG - < PONG 45 52 9f 1c [binary, 4 bytes]
+2025-03-28 18:07:22,709 - DEBUG - < PONG 0e ff 1b 3c [binary, 4 bytes]
+2025-03-28 18:07:22,709 - DEBUG - % received keepalive pong
+2025-03-28 18:07:22,709 - DEBUG - % received keepalive pong
+2025-03-28 18:07:42,729 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:42,729 - DEBUG - > PING 9d 4e fc 96 [binary, 4 bytes]
+2025-03-28 18:07:42,730 - DEBUG - % sending keepalive ping
+2025-03-28 18:07:42,730 - DEBUG - > PING c2 a9 77 c2 [binary, 4 bytes]
+2025-03-28 18:07:42,730 - DEBUG - < PONG 9d 4e fc 96 [binary, 4 bytes]
+2025-03-28 18:07:42,730 - DEBUG - < PONG c2 a9 77 c2 [binary, 4 bytes]
+2025-03-28 18:07:42,730 - DEBUG - % received keepalive pong
+2025-03-28 18:07:42,730 - DEBUG - % received keepalive pong
+2025-03-28 18:08:02,749 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:02,749 - DEBUG - > PING d3 ec 59 05 [binary, 4 bytes]
+2025-03-28 18:08:02,749 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:02,750 - DEBUG - > PING 3c ad 77 7d [binary, 4 bytes]
+2025-03-28 18:08:02,750 - DEBUG - < PONG d3 ec 59 05 [binary, 4 bytes]
+2025-03-28 18:08:02,750 - DEBUG - < PONG 3c ad 77 7d [binary, 4 bytes]
+2025-03-28 18:08:02,750 - DEBUG - % received keepalive pong
+2025-03-28 18:08:02,750 - DEBUG - % received keepalive pong
+2025-03-28 18:08:22,769 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:22,769 - DEBUG - > PING 07 97 35 a5 [binary, 4 bytes]
+2025-03-28 18:08:22,770 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:22,770 - DEBUG - > PING 'HI`\x00' [text, 4 bytes]
+2025-03-28 18:08:22,770 - DEBUG - < PONG 07 97 35 a5 [binary, 4 bytes]
+2025-03-28 18:08:22,770 - DEBUG - < PONG 'HI`\x00' [text, 4 bytes]
+2025-03-28 18:08:22,770 - DEBUG - % received keepalive pong
+2025-03-28 18:08:22,770 - DEBUG - % received keepalive pong
+2025-03-28 18:08:42,790 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:42,790 - DEBUG - > PING 49 51 03 d4 [binary, 4 bytes]
+2025-03-28 18:08:42,791 - DEBUG - % sending keepalive ping
+2025-03-28 18:08:42,791 - DEBUG - > PING 92 94 01 bc [binary, 4 bytes]
+2025-03-28 18:08:42,791 - DEBUG - < PONG 49 51 03 d4 [binary, 4 bytes]
+2025-03-28 18:08:42,791 - DEBUG - % received keepalive pong
+2025-03-28 18:08:42,791 - DEBUG - < PONG 92 94 01 bc [binary, 4 bytes]
+2025-03-28 18:08:42,791 - DEBUG - % received keepalive pong
+2025-03-28 18:09:02,811 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:02,811 - DEBUG - > PING e6 f1 60 be [binary, 4 bytes]
+2025-03-28 18:09:02,812 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:02,812 - DEBUG - > PING 4b cf 8f ea [binary, 4 bytes]
+2025-03-28 18:09:02,812 - DEBUG - < PONG e6 f1 60 be [binary, 4 bytes]
+2025-03-28 18:09:02,812 - DEBUG - < PONG 4b cf 8f ea [binary, 4 bytes]
+2025-03-28 18:09:02,812 - DEBUG - % received keepalive pong
+2025-03-28 18:09:02,812 - DEBUG - % received keepalive pong
+2025-03-28 18:09:22,832 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:22,832 - DEBUG - > PING 4a ec 68 a9 [binary, 4 bytes]
+2025-03-28 18:09:22,833 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:22,833 - DEBUG - > PING 'ёw"' [text, 4 bytes]
+2025-03-28 18:09:22,843 - DEBUG - < PONG 4a ec 68 a9 [binary, 4 bytes]
+2025-03-28 18:09:22,843 - DEBUG - < PONG 'ёw"' [text, 4 bytes]
+2025-03-28 18:09:22,843 - DEBUG - % received keepalive pong
+2025-03-28 18:09:22,843 - DEBUG - % received keepalive pong
+2025-03-28 18:09:42,863 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:42,863 - DEBUG - > PING 26 40 91 8c [binary, 4 bytes]
+2025-03-28 18:09:42,864 - DEBUG - % sending keepalive ping
+2025-03-28 18:09:42,864 - DEBUG - > PING 2a 4d f2 48 [binary, 4 bytes]
+2025-03-28 18:09:42,864 - DEBUG - < PONG 26 40 91 8c [binary, 4 bytes]
+2025-03-28 18:09:42,864 - DEBUG - < PONG 2a 4d f2 48 [binary, 4 bytes]
+2025-03-28 18:09:42,865 - DEBUG - % received keepalive pong
+2025-03-28 18:09:42,865 - DEBUG - % received keepalive pong
+2025-03-28 18:10:02,885 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:02,885 - DEBUG - > PING 82 a1 4d 57 [binary, 4 bytes]
+2025-03-28 18:10:02,885 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:02,885 - DEBUG - > PING f6 ac 53 83 [binary, 4 bytes]
+2025-03-28 18:10:02,885 - DEBUG - < PONG 82 a1 4d 57 [binary, 4 bytes]
+2025-03-28 18:10:02,886 - DEBUG - < PONG f6 ac 53 83 [binary, 4 bytes]
+2025-03-28 18:10:02,886 - DEBUG - % received keepalive pong
+2025-03-28 18:10:02,886 - DEBUG - % received keepalive pong
+2025-03-28 18:10:22,905 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:22,905 - DEBUG - > PING cd 58 a6 fd [binary, 4 bytes]
+2025-03-28 18:10:22,906 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:22,906 - DEBUG - > PING f7 81 b4 d7 [binary, 4 bytes]
+2025-03-28 18:10:22,906 - DEBUG - < PONG cd 58 a6 fd [binary, 4 bytes]
+2025-03-28 18:10:22,906 - DEBUG - < PONG f7 81 b4 d7 [binary, 4 bytes]
+2025-03-28 18:10:22,906 - DEBUG - % received keepalive pong
+2025-03-28 18:10:22,906 - DEBUG - % received keepalive pong
+2025-03-28 18:10:42,925 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:42,926 - DEBUG - > PING e1 42 c5 8c [binary, 4 bytes]
+2025-03-28 18:10:42,926 - DEBUG - % sending keepalive ping
+2025-03-28 18:10:42,926 - DEBUG - > PING 83 40 06 44 [binary, 4 bytes]
+2025-03-28 18:10:42,926 - DEBUG - < PONG e1 42 c5 8c [binary, 4 bytes]
+2025-03-28 18:10:42,926 - DEBUG - < PONG 83 40 06 44 [binary, 4 bytes]
+2025-03-28 18:10:42,926 - DEBUG - % received keepalive pong
+2025-03-28 18:10:42,926 - DEBUG - % received keepalive pong
+2025-03-28 18:11:02,946 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:02,946 - DEBUG - > PING cd bc 0d c3 [binary, 4 bytes]
+2025-03-28 18:11:02,946 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:02,946 - DEBUG - > PING ee 32 f3 8e [binary, 4 bytes]
+2025-03-28 18:11:02,947 - DEBUG - < PONG cd bc 0d c3 [binary, 4 bytes]
+2025-03-28 18:11:02,947 - DEBUG - % received keepalive pong
+2025-03-28 18:11:02,947 - DEBUG - < PONG ee 32 f3 8e [binary, 4 bytes]
+2025-03-28 18:11:02,947 - DEBUG - % received keepalive pong
+2025-03-28 18:11:22,966 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:22,966 - DEBUG - > PING 75 95 b1 94 [binary, 4 bytes]
+2025-03-28 18:11:22,966 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:22,966 - DEBUG - > PING c8 52 05 b2 [binary, 4 bytes]
+2025-03-28 18:11:22,967 - DEBUG - < PONG 75 95 b1 94 [binary, 4 bytes]
+2025-03-28 18:11:22,967 - DEBUG - < PONG c8 52 05 b2 [binary, 4 bytes]
+2025-03-28 18:11:22,967 - DEBUG - % received keepalive pong
+2025-03-28 18:11:22,967 - DEBUG - % received keepalive pong
+2025-03-28 18:11:42,982 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:42,982 - DEBUG - > PING 83 dd d8 01 [binary, 4 bytes]
+2025-03-28 18:11:42,982 - DEBUG - % sending keepalive ping
+2025-03-28 18:11:42,982 - DEBUG - > PING 53 07 0e 8f [binary, 4 bytes]
+2025-03-28 18:11:42,982 - DEBUG - < PONG 83 dd d8 01 [binary, 4 bytes]
+2025-03-28 18:11:42,982 - DEBUG - < PONG 53 07 0e 8f [binary, 4 bytes]
+2025-03-28 18:11:42,982 - DEBUG - % received keepalive pong
+2025-03-28 18:11:42,982 - DEBUG - % received keepalive pong
+2025-03-28 18:12:02,992 - DEBUG - % sending keepalive ping
+2025-03-28 18:12:02,992 - DEBUG - > PING 63 16 e9 f2 [binary, 4 bytes]
+2025-03-28 18:12:02,992 - DEBUG - % sending keepalive ping
+2025-03-28 18:12:02,992 - DEBUG - > PING 4e 88 44 26 [binary, 4 bytes]
+2025-03-28 18:12:02,993 - DEBUG - < PONG 63 16 e9 f2 [binary, 4 bytes]
+2025-03-28 18:12:02,993 - DEBUG - < PONG 4e 88 44 26 [binary, 4 bytes]
+2025-03-28 18:12:02,993 - DEBUG - % received keepalive pong
+2025-03-28 18:12:02,993 - DEBUG - % received keepalive pong
+2025-03-28 18:12:22,621 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:12:22,622 - DEBUG - = connection is CLOSING
+2025-03-28 18:12:22,622 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:12:22,622 - DEBUG - x half-closing TCP connection
+2025-03-28 18:12:22,622 - DEBUG - = connection is CLOSED
+2025-03-28 18:12:22,622 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:12:22,622 - DEBUG - = connection is CLOSING
+2025-03-28 18:12:22,622 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:12:22,622 - DEBUG - x half-closing TCP connection
+2025-03-28 18:12:22,622 - DEBUG - = connection is CLOSED
+2025-03-28 18:12:22,622 - INFO - connection closed
+2025-03-28 18:12:22,622 - INFO - connection closed
+2025-03-28 18:25:33,067 - DEBUG - = connection is CONNECTING
+2025-03-28 18:25:33,068 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:25:33,068 - DEBUG - < Host: localhost:8765
+2025-03-28 18:25:33,068 - DEBUG - < Connection: Upgrade
+2025-03-28 18:25:33,068 - DEBUG - < Pragma: no-cache
+2025-03-28 18:25:33,068 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:25:33,068 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:25:33,068 - DEBUG - < Upgrade: websocket
+2025-03-28 18:25:33,068 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:25:33,068 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:25:33,068 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:25:33,068 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:25:33,068 - DEBUG - < Sec-WebSocket-Key: VUiImSnphJa1VpN21QIzZA==
+2025-03-28 18:25:33,068 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:25:33,068 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:25:33,068 - DEBUG - > Upgrade: websocket
+2025-03-28 18:25:33,068 - DEBUG - > Connection: Upgrade
+2025-03-28 18:25:33,068 - DEBUG - > Sec-WebSocket-Accept: vS1SaL2ZEE0Dvp+0udGtNPoCQvQ=
+2025-03-28 18:25:33,068 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:25:33,068 - DEBUG - > Date: Fri, 28 Mar 2025 10:25:33 GMT
+2025-03-28 18:25:33,068 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:25:33,068 - INFO - connection open
+2025-03-28 18:25:33,068 - DEBUG - = connection is OPEN
+2025-03-28 18:25:33,079 - DEBUG - = connection is CONNECTING
+2025-03-28 18:25:33,079 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:25:33,079 - DEBUG - < Host: localhost:8765
+2025-03-28 18:25:33,079 - DEBUG - < Connection: Upgrade
+2025-03-28 18:25:33,079 - DEBUG - < Pragma: no-cache
+2025-03-28 18:25:33,079 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:25:33,079 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:25:33,079 - DEBUG - < Upgrade: websocket
+2025-03-28 18:25:33,080 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:25:33,080 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:25:33,080 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:25:33,080 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:25:33,080 - DEBUG - < Sec-WebSocket-Key: X9p1oHqrWTvoYz7GaIpuww==
+2025-03-28 18:25:33,080 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:25:33,080 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:25:33,080 - DEBUG - > Upgrade: websocket
+2025-03-28 18:25:33,080 - DEBUG - > Connection: Upgrade
+2025-03-28 18:25:33,080 - DEBUG - > Sec-WebSocket-Accept: qRrAninpoUUBct1l0IWCHXT3MF0=
+2025-03-28 18:25:33,080 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:25:33,080 - DEBUG - > Date: Fri, 28 Mar 2025 10:25:33 GMT
+2025-03-28 18:25:33,080 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:25:33,080 - INFO - connection open
+2025-03-28 18:25:33,080 - DEBUG - = connection is OPEN
+2025-03-28 18:25:53,089 - DEBUG - % sending keepalive ping
+2025-03-28 18:25:53,089 - DEBUG - > PING 'vYD3' [text, 4 bytes]
+2025-03-28 18:25:53,090 - DEBUG - % sending keepalive ping
+2025-03-28 18:25:53,090 - DEBUG - > PING fc e6 6a 3e [binary, 4 bytes]
+2025-03-28 18:25:53,090 - DEBUG - < PONG 'vYD3' [text, 4 bytes]
+2025-03-28 18:25:53,090 - DEBUG - < PONG fc e6 6a 3e [binary, 4 bytes]
+2025-03-28 18:25:53,090 - DEBUG - % received keepalive pong
+2025-03-28 18:25:53,090 - DEBUG - % received keepalive pong
+2025-03-28 18:26:13,109 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:13,109 - DEBUG - > PING 5e 20 f5 2b [binary, 4 bytes]
+2025-03-28 18:26:13,110 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:13,110 - DEBUG - > PING 02 24 05 8b [binary, 4 bytes]
+2025-03-28 18:26:13,110 - DEBUG - < PONG 5e 20 f5 2b [binary, 4 bytes]
+2025-03-28 18:26:13,110 - DEBUG - < PONG 02 24 05 8b [binary, 4 bytes]
+2025-03-28 18:26:13,110 - DEBUG - % received keepalive pong
+2025-03-28 18:26:13,110 - DEBUG - % received keepalive pong
+2025-03-28 18:26:33,130 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:33,130 - DEBUG - > PING 6a 7b 10 f8 [binary, 4 bytes]
+2025-03-28 18:26:33,130 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:33,130 - DEBUG - > PING 14 fe 13 a3 [binary, 4 bytes]
+2025-03-28 18:26:33,131 - DEBUG - < PONG 6a 7b 10 f8 [binary, 4 bytes]
+2025-03-28 18:26:33,131 - DEBUG - < PONG 14 fe 13 a3 [binary, 4 bytes]
+2025-03-28 18:26:33,131 - DEBUG - % received keepalive pong
+2025-03-28 18:26:33,131 - DEBUG - % received keepalive pong
+2025-03-28 18:26:53,150 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:53,150 - DEBUG - > PING ea 9f dd 85 [binary, 4 bytes]
+2025-03-28 18:26:53,151 - DEBUG - % sending keepalive ping
+2025-03-28 18:26:53,151 - DEBUG - > PING 0f 48 c9 19 [binary, 4 bytes]
+2025-03-28 18:26:53,151 - DEBUG - < PONG ea 9f dd 85 [binary, 4 bytes]
+2025-03-28 18:26:53,151 - DEBUG - < PONG 0f 48 c9 19 [binary, 4 bytes]
+2025-03-28 18:26:53,151 - DEBUG - % received keepalive pong
+2025-03-28 18:26:53,151 - DEBUG - % received keepalive pong
+2025-03-28 18:27:13,170 - DEBUG - % sending keepalive ping
+2025-03-28 18:27:13,170 - DEBUG - > PING 20 78 ec db [binary, 4 bytes]
+2025-03-28 18:27:13,171 - DEBUG - % sending keepalive ping
+2025-03-28 18:27:13,171 - DEBUG - > PING 5d 87 58 3f [binary, 4 bytes]
+2025-03-28 18:27:13,171 - DEBUG - < PONG 20 78 ec db [binary, 4 bytes]
+2025-03-28 18:27:13,171 - DEBUG - < PONG 5d 87 58 3f [binary, 4 bytes]
+2025-03-28 18:27:13,171 - DEBUG - % received keepalive pong
+2025-03-28 18:27:13,171 - DEBUG - % received keepalive pong
+2025-03-28 18:27:29,794 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:27:29,794 - DEBUG - = connection is CLOSING
+2025-03-28 18:27:29,794 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:27:29,794 - DEBUG - x half-closing TCP connection
+2025-03-28 18:27:29,794 - DEBUG - = connection is CLOSED
+2025-03-28 18:27:29,794 - DEBUG - < CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:27:29,794 - DEBUG - = connection is CLOSING
+2025-03-28 18:27:29,794 - DEBUG - > CLOSE 1001 (going away) [2 bytes]
+2025-03-28 18:27:29,794 - DEBUG - x half-closing TCP connection
+2025-03-28 18:27:29,794 - DEBUG - = connection is CLOSED
+2025-03-28 18:27:29,794 - INFO - connection closed
+2025-03-28 18:27:29,795 - INFO - connection closed
+2025-03-28 18:27:53,329 - DEBUG - = connection is CONNECTING
+2025-03-28 18:27:53,329 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:27:53,329 - DEBUG - < Host: localhost:8765
+2025-03-28 18:27:53,330 - DEBUG - < Connection: Upgrade
+2025-03-28 18:27:53,330 - DEBUG - < Pragma: no-cache
+2025-03-28 18:27:53,330 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:27:53,330 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:27:53,330 - DEBUG - < Upgrade: websocket
+2025-03-28 18:27:53,330 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:27:53,330 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:27:53,330 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:27:53,330 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:27:53,330 - DEBUG - < Sec-WebSocket-Key: NvuhLA6FSKOVI0ZykKuzaw==
+2025-03-28 18:27:53,330 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:27:53,330 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:27:53,330 - DEBUG - > Upgrade: websocket
+2025-03-28 18:27:53,330 - DEBUG - > Connection: Upgrade
+2025-03-28 18:27:53,330 - DEBUG - > Sec-WebSocket-Accept: 2laf5FPbp2hFhbHwB5RzzdDVbEQ=
+2025-03-28 18:27:53,330 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:27:53,330 - DEBUG - > Date: Fri, 28 Mar 2025 10:27:53 GMT
+2025-03-28 18:27:53,330 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:27:53,330 - INFO - connection open
+2025-03-28 18:27:53,330 - DEBUG - = connection is OPEN
+2025-03-28 18:27:53,341 - DEBUG - = connection is CONNECTING
+2025-03-28 18:27:53,344 - DEBUG - < GET / HTTP/1.1
+2025-03-28 18:27:53,344 - DEBUG - < Host: localhost:8765
+2025-03-28 18:27:53,344 - DEBUG - < Connection: Upgrade
+2025-03-28 18:27:53,344 - DEBUG - < Pragma: no-cache
+2025-03-28 18:27:53,344 - DEBUG - < Cache-Control: no-cache
+2025-03-28 18:27:53,344 - DEBUG - < User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025-03-28 18:27:53,344 - DEBUG - < Upgrade: websocket
+2025-03-28 18:27:53,344 - DEBUG - < Origin: chrome-extension://cafjnjmigiccjehajaclnkoickngmdha
+2025-03-28 18:27:53,344 - DEBUG - < Sec-WebSocket-Version: 13
+2025-03-28 18:27:53,344 - DEBUG - < Accept-Encoding: gzip, deflate, br, zstd
+2025-03-28 18:27:53,344 - DEBUG - < Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+2025-03-28 18:27:53,344 - DEBUG - < Sec-WebSocket-Key: feC8Ycizh5H5E8irx7JIPg==
+2025-03-28 18:27:53,345 - DEBUG - < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-03-28 18:27:53,345 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2025-03-28 18:27:53,345 - DEBUG - > Upgrade: websocket
+2025-03-28 18:27:53,345 - DEBUG - > Connection: Upgrade
+2025-03-28 18:27:53,345 - DEBUG - > Sec-WebSocket-Accept: ikLSEt7oIMFuqk5RHp6BaRbm9K8=
+2025-03-28 18:27:53,345 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+2025-03-28 18:27:53,345 - DEBUG - > Date: Fri, 28 Mar 2025 10:27:53 GMT
+2025-03-28 18:27:53,345 - DEBUG - > Server: Python/3.13 websockets/12.0
+2025-03-28 18:27:53,345 - INFO - connection open
+2025-03-28 18:27:53,345 - DEBUG - = connection is OPEN
+2025-03-28 18:28:13,351 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:13,351 - DEBUG - > PING "''Ri" [text, 4 bytes]
+2025-03-28 18:28:13,351 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:13,351 - DEBUG - > PING '_lpQ' [text, 4 bytes]
+2025-03-28 18:28:13,351 - DEBUG - < PONG "''Ri" [text, 4 bytes]
+2025-03-28 18:28:13,351 - DEBUG - < PONG '_lpQ' [text, 4 bytes]
+2025-03-28 18:28:13,351 - DEBUG - % received keepalive pong
+2025-03-28 18:28:13,351 - DEBUG - % received keepalive pong
+2025-03-28 18:28:33,372 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:33,372 - DEBUG - > PING 'ǣ\x02q' [text, 4 bytes]
+2025-03-28 18:28:33,372 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:33,372 - DEBUG - > PING 6d 59 a5 00 [binary, 4 bytes]
+2025-03-28 18:28:33,372 - DEBUG - < PONG 'ǣ\x02q' [text, 4 bytes]
+2025-03-28 18:28:33,372 - DEBUG - < PONG 6d 59 a5 00 [binary, 4 bytes]
+2025-03-28 18:28:33,372 - DEBUG - % received keepalive pong
+2025-03-28 18:28:33,372 - DEBUG - % received keepalive pong
+2025-03-28 18:28:53,392 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:53,392 - DEBUG - > PING b3 35 25 00 [binary, 4 bytes]
+2025-03-28 18:28:53,392 - DEBUG - % sending keepalive ping
+2025-03-28 18:28:53,392 - DEBUG - > PING 7e 98 9c 03 [binary, 4 bytes]
+2025-03-28 18:28:53,393 - DEBUG - < PONG b3 35 25 00 [binary, 4 bytes]
+2025-03-28 18:28:53,393 - DEBUG - < PONG 7e 98 9c 03 [binary, 4 bytes]
+2025-03-28 18:28:53,393 - DEBUG - % received keepalive pong
+2025-03-28 18:28:53,393 - DEBUG - % received keepalive pong
+2025-03-28 18:29:13,412 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:13,412 - DEBUG - > PING a9 9a 02 3a [binary, 4 bytes]
+2025-03-28 18:29:13,412 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:13,413 - DEBUG - > PING a8 cf a8 f0 [binary, 4 bytes]
+2025-03-28 18:29:13,413 - DEBUG - < PONG a9 9a 02 3a [binary, 4 bytes]
+2025-03-28 18:29:13,413 - DEBUG - % received keepalive pong
+2025-03-28 18:29:13,413 - DEBUG - < PONG a8 cf a8 f0 [binary, 4 bytes]
+2025-03-28 18:29:13,413 - DEBUG - % received keepalive pong
+2025-03-28 18:29:33,432 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:33,432 - DEBUG - > PING ae b7 3a 62 [binary, 4 bytes]
+2025-03-28 18:29:33,432 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:33,432 - DEBUG - > PING 8e bb f2 b0 [binary, 4 bytes]
+2025-03-28 18:29:33,433 - DEBUG - < PONG ae b7 3a 62 [binary, 4 bytes]
+2025-03-28 18:29:33,433 - DEBUG - < PONG 8e bb f2 b0 [binary, 4 bytes]
+2025-03-28 18:29:33,433 - DEBUG - % received keepalive pong
+2025-03-28 18:29:33,433 - DEBUG - % received keepalive pong
+2025-03-28 18:29:53,452 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:53,452 - DEBUG - > PING d4 ef 84 67 [binary, 4 bytes]
+2025-03-28 18:29:53,452 - DEBUG - % sending keepalive ping
+2025-03-28 18:29:53,452 - DEBUG - > PING 89 a0 7f 42 [binary, 4 bytes]
+2025-03-28 18:29:53,453 - DEBUG - < PONG d4 ef 84 67 [binary, 4 bytes]
+2025-03-28 18:29:53,453 - DEBUG - < PONG 89 a0 7f 42 [binary, 4 bytes]
+2025-03-28 18:29:53,453 - DEBUG - % received keepalive pong
+2025-03-28 18:29:53,453 - DEBUG - % received keepalive pong
+2025-03-28 18:30:13,472 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:13,472 - DEBUG - > PING 21 fc 71 6c [binary, 4 bytes]
+2025-03-28 18:30:13,472 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:13,472 - DEBUG - > PING 00 0b 59 9d [binary, 4 bytes]
+2025-03-28 18:30:13,473 - DEBUG - < PONG 21 fc 71 6c [binary, 4 bytes]
+2025-03-28 18:30:13,473 - DEBUG - < PONG 00 0b 59 9d [binary, 4 bytes]
+2025-03-28 18:30:13,473 - DEBUG - % received keepalive pong
+2025-03-28 18:30:13,473 - DEBUG - % received keepalive pong
+2025-03-28 18:30:19,115 - DEBUG - < TEXT '{"text":"right_click"}' [22 bytes]
+2025-03-28 18:30:19,122 - INFO - 接收到消息: {'text': 'right_click'}
+2025-03-28 18:30:19,122 - DEBUG - 执行鼠标右键点击
+2025-03-28 18:30:19,206 - INFO - ydotool 执行结果: c1 111
+
+2025-03-28 18:30:19,206 - DEBUG - > TEXT '{"status": "success"}' [21 bytes]
+2025-03-28 18:30:19,206 - DEBUG - > TEXT '{"status": "no action"}' [23 bytes]
+2025-03-28 18:30:33,488 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:33,488 - DEBUG - > PING 6d 05 9c 1a [binary, 4 bytes]
+2025-03-28 18:30:33,488 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:33,488 - DEBUG - > PING de e9 91 76 [binary, 4 bytes]
+2025-03-28 18:30:33,488 - DEBUG - < PONG 6d 05 9c 1a [binary, 4 bytes]
+2025-03-28 18:30:33,488 - DEBUG - < PONG de e9 91 76 [binary, 4 bytes]
+2025-03-28 18:30:33,488 - DEBUG - % received keepalive pong
+2025-03-28 18:30:33,488 - DEBUG - % received keepalive pong
+2025-03-28 18:30:53,508 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:53,508 - DEBUG - > PING 7f d3 98 a0 [binary, 4 bytes]
+2025-03-28 18:30:53,508 - DEBUG - % sending keepalive ping
+2025-03-28 18:30:53,508 - DEBUG - > PING 60 f4 1a 76 [binary, 4 bytes]
+2025-03-28 18:30:53,509 - DEBUG - < PONG 7f d3 98 a0 [binary, 4 bytes]
+2025-03-28 18:30:53,509 - DEBUG - < PONG 60 f4 1a 76 [binary, 4 bytes]
+2025-03-28 18:30:53,509 - DEBUG - % received keepalive pong
+2025-03-28 18:30:53,509 - DEBUG - % received keepalive pong
+2025-03-28 18:31:13,528 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:13,528 - DEBUG - > PING f4 0a 6b bd [binary, 4 bytes]
+2025-03-28 18:31:13,528 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:13,528 - DEBUG - > PING '~n\x1e0' [text, 4 bytes]
+2025-03-28 18:31:13,529 - DEBUG - < PONG f4 0a 6b bd [binary, 4 bytes]
+2025-03-28 18:31:13,529 - DEBUG - < PONG '~n\x1e0' [text, 4 bytes]
+2025-03-28 18:31:13,529 - DEBUG - % received keepalive pong
+2025-03-28 18:31:13,529 - DEBUG - % received keepalive pong
+2025-03-28 18:31:33,549 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:33,549 - DEBUG - > PING 28 96 58 44 [binary, 4 bytes]
+2025-03-28 18:31:33,549 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:33,549 - DEBUG - > PING 81 ba 9c de [binary, 4 bytes]
+2025-03-28 18:31:33,549 - DEBUG - < PONG 28 96 58 44 [binary, 4 bytes]
+2025-03-28 18:31:33,549 - DEBUG - < PONG 81 ba 9c de [binary, 4 bytes]
+2025-03-28 18:31:33,549 - DEBUG - % received keepalive pong
+2025-03-28 18:31:33,549 - DEBUG - % received keepalive pong
+2025-03-28 18:31:53,568 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:53,568 - DEBUG - > PING ff 15 bc 34 [binary, 4 bytes]
+2025-03-28 18:31:53,568 - DEBUG - % sending keepalive ping
+2025-03-28 18:31:53,568 - DEBUG - > PING 5a 78 6d 9e [binary, 4 bytes]
+2025-03-28 18:31:53,568 - DEBUG - < PONG ff 15 bc 34 [binary, 4 bytes]
+2025-03-28 18:31:53,568 - DEBUG - < PONG 5a 78 6d 9e [binary, 4 bytes]
+2025-03-28 18:31:53,568 - DEBUG - % received keepalive pong
+2025-03-28 18:31:53,569 - DEBUG - % received keepalive pong
+2025-03-28 18:32:13,588 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:13,588 - DEBUG - > PING 33 a6 7f 88 [binary, 4 bytes]
+2025-03-28 18:32:13,588 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:13,588 - DEBUG - > PING 2e 1a 32 d6 [binary, 4 bytes]
+2025-03-28 18:32:13,589 - DEBUG - < PONG 33 a6 7f 88 [binary, 4 bytes]
+2025-03-28 18:32:13,589 - DEBUG - < PONG 2e 1a 32 d6 [binary, 4 bytes]
+2025-03-28 18:32:13,589 - DEBUG - % received keepalive pong
+2025-03-28 18:32:13,589 - DEBUG - % received keepalive pong
+2025-03-28 18:32:33,605 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:33,606 - DEBUG - > PING 'ٟi_' [text, 4 bytes]
+2025-03-28 18:32:33,606 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:33,606 - DEBUG - > PING 8b dc 95 3f [binary, 4 bytes]
+2025-03-28 18:32:33,606 - DEBUG - < PONG 'ٟi_' [text, 4 bytes]
+2025-03-28 18:32:33,606 - DEBUG - < PONG 8b dc 95 3f [binary, 4 bytes]
+2025-03-28 18:32:33,606 - DEBUG - % received keepalive pong
+2025-03-28 18:32:33,606 - DEBUG - % received keepalive pong
+2025-03-28 18:32:53,626 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:53,626 - DEBUG - > PING 67 39 de c6 [binary, 4 bytes]
+2025-03-28 18:32:53,626 - DEBUG - % sending keepalive ping
+2025-03-28 18:32:53,626 - DEBUG - > PING 23 cd e6 26 [binary, 4 bytes]
+2025-03-28 18:32:53,627 - DEBUG - < PONG 67 39 de c6 [binary, 4 bytes]
+2025-03-28 18:32:53,627 - DEBUG - < PONG 23 cd e6 26 [binary, 4 bytes]
+2025-03-28 18:32:53,627 - DEBUG - % received keepalive pong
+2025-03-28 18:32:53,627 - DEBUG - % received keepalive pong
+2025-03-28 18:33:13,636 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:13,636 - DEBUG - > PING 88 91 d9 c8 [binary, 4 bytes]
+2025-03-28 18:33:13,636 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:13,636 - DEBUG - > PING 73 21 90 bc [binary, 4 bytes]
+2025-03-28 18:33:13,636 - DEBUG - < PONG 88 91 d9 c8 [binary, 4 bytes]
+2025-03-28 18:33:13,636 - DEBUG - < PONG 73 21 90 bc [binary, 4 bytes]
+2025-03-28 18:33:13,636 - DEBUG - % received keepalive pong
+2025-03-28 18:33:13,636 - DEBUG - % received keepalive pong
+2025-03-28 18:33:33,656 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:33,656 - DEBUG - > PING 9f 1d a5 ad [binary, 4 bytes]
+2025-03-28 18:33:33,656 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:33,656 - DEBUG - > PING 2c 33 d5 28 [binary, 4 bytes]
+2025-03-28 18:33:33,657 - DEBUG - < PONG 9f 1d a5 ad [binary, 4 bytes]
+2025-03-28 18:33:33,657 - DEBUG - < PONG 2c 33 d5 28 [binary, 4 bytes]
+2025-03-28 18:33:33,657 - DEBUG - % received keepalive pong
+2025-03-28 18:33:33,657 - DEBUG - % received keepalive pong
+2025-03-28 18:33:53,676 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:53,676 - DEBUG - > PING 27 a9 53 bb [binary, 4 bytes]
+2025-03-28 18:33:53,676 - DEBUG - % sending keepalive ping
+2025-03-28 18:33:53,676 - DEBUG - > PING d5 f3 72 b4 [binary, 4 bytes]
+2025-03-28 18:33:53,677 - DEBUG - < PONG 27 a9 53 bb [binary, 4 bytes]
+2025-03-28 18:33:53,677 - DEBUG - < PONG d5 f3 72 b4 [binary, 4 bytes]
+2025-03-28 18:33:53,677 - DEBUG - % received keepalive pong
+2025-03-28 18:33:53,677 - DEBUG - % received keepalive pong
+2025-03-28 18:34:13,696 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:13,696 - DEBUG - > PING 04 2d b4 ac [binary, 4 bytes]
+2025-03-28 18:34:13,696 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:13,696 - DEBUG - > PING 87 b0 ca a9 [binary, 4 bytes]
+2025-03-28 18:34:13,697 - DEBUG - < PONG 04 2d b4 ac [binary, 4 bytes]
+2025-03-28 18:34:13,697 - DEBUG - < PONG 87 b0 ca a9 [binary, 4 bytes]
+2025-03-28 18:34:13,697 - DEBUG - % received keepalive pong
+2025-03-28 18:34:13,697 - DEBUG - % received keepalive pong
+2025-03-28 18:34:33,716 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:33,716 - DEBUG - > PING 'Y\x0bޗ' [text, 4 bytes]
+2025-03-28 18:34:33,716 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:33,716 - DEBUG - > PING 89 51 33 f1 [binary, 4 bytes]
+2025-03-28 18:34:33,717 - DEBUG - < PONG 'Y\x0bޗ' [text, 4 bytes]
+2025-03-28 18:34:33,717 - DEBUG - < PONG 89 51 33 f1 [binary, 4 bytes]
+2025-03-28 18:34:33,717 - DEBUG - % received keepalive pong
+2025-03-28 18:34:33,717 - DEBUG - % received keepalive pong
+2025-03-28 18:34:53,737 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:53,737 - DEBUG - > PING 32 a7 e2 ec [binary, 4 bytes]
+2025-03-28 18:34:53,737 - DEBUG - % sending keepalive ping
+2025-03-28 18:34:53,737 - DEBUG - > PING '?hHY' [text, 4 bytes]
+2025-03-28 18:34:53,737 - DEBUG - < PONG 32 a7 e2 ec [binary, 4 bytes]
+2025-03-28 18:34:53,737 - DEBUG - < PONG '?hHY' [text, 4 bytes]
+2025-03-28 18:34:53,738 - DEBUG - % received keepalive pong
+2025-03-28 18:34:53,738 - DEBUG - % received keepalive pong
+2025-03-28 18:35:13,740 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:13,740 - DEBUG - > PING 9d b8 7c 5a [binary, 4 bytes]
+2025-03-28 18:35:13,740 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:13,740 - DEBUG - > PING 06 61 aa 41 [binary, 4 bytes]
+2025-03-28 18:35:13,740 - DEBUG - < PONG 9d b8 7c 5a [binary, 4 bytes]
+2025-03-28 18:35:13,740 - DEBUG - < PONG 06 61 aa 41 [binary, 4 bytes]
+2025-03-28 18:35:13,740 - DEBUG - % received keepalive pong
+2025-03-28 18:35:13,740 - DEBUG - % received keepalive pong
+2025-03-28 18:35:33,760 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:33,760 - DEBUG - > PING 7d a2 98 fc [binary, 4 bytes]
+2025-03-28 18:35:33,761 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:33,761 - DEBUG - > PING b6 18 e4 a0 [binary, 4 bytes]
+2025-03-28 18:35:33,761 - DEBUG - < PONG 7d a2 98 fc [binary, 4 bytes]
+2025-03-28 18:35:33,761 - DEBUG - < PONG b6 18 e4 a0 [binary, 4 bytes]
+2025-03-28 18:35:33,761 - DEBUG - % received keepalive pong
+2025-03-28 18:35:33,761 - DEBUG - % received keepalive pong
+2025-03-28 18:35:53,781 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:53,781 - DEBUG - > PING c3 e3 68 3d [binary, 4 bytes]
+2025-03-28 18:35:53,782 - DEBUG - % sending keepalive ping
+2025-03-28 18:35:53,782 - DEBUG - > PING 71 49 a8 e4 [binary, 4 bytes]
+2025-03-28 18:35:53,782 - DEBUG - < PONG c3 e3 68 3d [binary, 4 bytes]
+2025-03-28 18:35:53,782 - DEBUG - < PONG 71 49 a8 e4 [binary, 4 bytes]
+2025-03-28 18:35:53,782 - DEBUG - % received keepalive pong
+2025-03-28 18:35:53,782 - DEBUG - % received keepalive pong
+2025-03-28 18:36:13,801 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:13,801 - DEBUG - > PING 'h\x17\x16p' [text, 4 bytes]
+2025-03-28 18:36:13,801 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:13,801 - DEBUG - > PING 0d 5b 41 d6 [binary, 4 bytes]
+2025-03-28 18:36:13,802 - DEBUG - < PONG 'h\x17\x16p' [text, 4 bytes]
+2025-03-28 18:36:13,802 - DEBUG - < PONG 0d 5b 41 d6 [binary, 4 bytes]
+2025-03-28 18:36:13,802 - DEBUG - % received keepalive pong
+2025-03-28 18:36:13,802 - DEBUG - % received keepalive pong
+2025-03-28 18:36:33,822 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:33,822 - DEBUG - > PING 45 70 0f 8c [binary, 4 bytes]
+2025-03-28 18:36:33,822 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:33,822 - DEBUG - > PING c2 eb 95 57 [binary, 4 bytes]
+2025-03-28 18:36:33,823 - DEBUG - < PONG 45 70 0f 8c [binary, 4 bytes]
+2025-03-28 18:36:33,823 - DEBUG - < PONG c2 eb 95 57 [binary, 4 bytes]
+2025-03-28 18:36:33,823 - DEBUG - % received keepalive pong
+2025-03-28 18:36:33,823 - DEBUG - % received keepalive pong
+2025-03-28 18:36:53,842 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:53,842 - DEBUG - > PING b2 05 04 d9 [binary, 4 bytes]
+2025-03-28 18:36:53,842 - DEBUG - % sending keepalive ping
+2025-03-28 18:36:53,843 - DEBUG - > PING fe 2d f7 80 [binary, 4 bytes]
+2025-03-28 18:36:53,843 - DEBUG - < PONG b2 05 04 d9 [binary, 4 bytes]
+2025-03-28 18:36:53,843 - DEBUG - < PONG fe 2d f7 80 [binary, 4 bytes]
+2025-03-28 18:36:53,843 - DEBUG - % received keepalive pong
+2025-03-28 18:36:53,843 - DEBUG - % received keepalive pong
