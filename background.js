@@ -1,19 +1,41 @@
 import { actions, drags } from "./scripts/bgActions.js";
 
-let lastTabId = null;
-let lastActivatedTime = 0;
-const DOUBLE_CLICK_DELAY = 300; // 双击的最大时间间隔（毫秒）
+const socket = new WebSocket('ws://localhost:8765');
 
 function init() {
+    // 连接 WebSocket 服务器
+    const socket = new WebSocket('ws://localhost:8765');
+
+    // 打开 WebSocket 连接时，发送一些初始化操作
+    socket.onopen = () => {
+        console.log('WebSocket 连接已建立');
+    };
+
+    // 错误处理
+    socket.onerror = (error) => {
+        console.error('WebSocket 错误:', error);
+    };
+
+    // 监听 WebSocket 消息
+    socket.onmessage = (event) => {
+        const response = JSON.parse(event.data);
+        console.log('收到响应:', response);
+    };
+
+    // WebSocket 连接关闭时的处理
+    socket.onclose = () => {
+        console.log('WebSocket 连接已关闭');
+    };
+
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message?.action === "simulateRightClick") {
-            sendNativeMessage({ text: "right_click" }, () => {
-                sendResponse(true);
-            });
+            // 发送右键点击消息
+            sendWebSocketMessage({ text: "right_click" }, sendResponse);
         }
 
         if (message?.img) {
-            sendNativeMessage({ img: message.img });
+            // 发送图片消息
+            sendWebSocketMessage({ img: message.img }, sendResponse);
         }
 
         if (message?.command) {
@@ -28,45 +50,33 @@ function init() {
             if (drags[message.drag]) {
                 drags[message.drag](message.data);
             } else {
-                // console.log("未知的拖动事件:", message.drag);
                 chrome.tabs.sendMessage(sender.tab.id, message);
             }
         }
 
-        return true;
+        return true; // 保持异步响应
     });
-
-    // chrome.tabs.onActivated.addListener((activeInfo) => {
-    //     const currentTime = Date.now();
-    //     const currentTabId = activeInfo.tabId;
-
-    //     // 判断是否是同一个 Tab，如果是，且点击的时间间隔小于 DOUBLE_CLICK_DELAY，则认为是双击
-    //     if (lastTabId === currentTabId && currentTime - lastActivatedTime <= DOUBLE_CLICK_DELAY) {
-    //         // 触发双击事件
-    //         console.log('Tab double-clicked!');
-    //         chrome.tabs.sendMessage(currentTabId, { action: 'double_click' });
-    //     }
-
-    //     console.log("激活标签", activeInfo);
-
-    //     // 更新最后一次激活的 Tab 和时间
-    //     lastTabId = currentTabId;
-    //     lastActivatedTime = currentTime;
-    // });
 }
 
-function sendNativeMessage(data, callback) {
-    chrome.runtime.sendNativeMessage("simulation.right.click",
-        data,
-        (response) => {
-            if (chrome.runtime.lastError) {
-                console.error("发送失败:", chrome.runtime.lastError);
+// 通过 WebSocket 发送消息的封装函数
+function sendWebSocketMessage(message, callback) {
+    if (socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify(message));
+        console.log('发送消息:', message);
+        // 等待响应
+        socket.onmessage = (event) => {
+            const response = JSON.parse(event.data);
+            console.log('收到响应:', response);
+            if (response.status === 'success') {
+                callback && callback(true);
             } else {
-                console.log("Native 响应:", response);
+                callback && callback(false);
             }
-            callback && callback();
-        }
-    );
+        };
+    } else {
+        console.error('WebSocket 连接未打开');
+        callback && callback(false);
+    }
 }
 
 init();

@@ -1,15 +1,24 @@
+var specialEle = {
+    "https://www.bilibili.com/": () => {
+        return document.querySelector('#bewly')?.shadowRoot?.querySelector("div[data-overlayscrollbars-contents]");
+    }
+}
+
 var actions = {
     "滚动到顶部": () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        getScrollTarget().scrollTo({ top: 0, behavior: "smooth" });
     },
     "滚动到底部": () => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        let ele = getScrollTarget();
+        ele.scrollTo({ top: ele.scrollHeight || document.body.scrollHeight, behavior: "smooth" });
     },
     "滚动到左侧": () => {
-        window.scrollBy({ left: -window.innerWidth, behavior: "smooth" });
+        let ele = getScrollTarget();
+        getScrollTarget().scrollBy({ left: -ele.innerWidth, behavior: "smooth" });
     },
     "滚动到右侧": () => {
-        window.scrollBy({ left: window.innerWidth, behavior: "smooth" });
+        let ele = getScrollTarget();
+        getScrollTarget().scrollBy({ left: ele.innerWidth, behavior: "smooth" });
     },
     "刷新页面": () => {
         window.location.reload();
@@ -41,6 +50,10 @@ function init() {
             drags[message.drag](message.data);
         }
     });
+}
+
+function getScrollTarget() {
+    return specialEle[window.location.href]?.call() || window;
 }
 
 init();

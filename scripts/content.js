@@ -74,10 +74,36 @@ var _dragSettings = {
 
 var _action;
 
+var _specialEle = {
+    "https://www.bilibili.com/": () => {
+        return document.querySelector('#bewly')?.shadowRoot?.querySelector("div[data-overlayscrollbars-contents]");
+    }
+}
+
 function init() {
+    // removeListener();
     initCanvas();
     initListener();
 }
+
+function getDragTarget() {
+    return specialEle[window.location.href]?.call() || document.body;
+}
+
+// /**
+//  * 移除影响插件工作的元素的监听事件
+//  */
+// function removeListener() {
+//     _removeEle.forEach(selector => {
+//         let ele = document.querySelector(selector);
+//         if (ele) {
+//             // let clone = ele.cloneNode(true);
+//             // ele.replaceWith(clone);
+//             // ele.removeAllEventListeners();
+//             // ele.onmousedown = () => { };
+//         }
+//     });
+// }
 
 function initCanvas() {
     const link = document.createElement("link");
@@ -104,7 +130,7 @@ function initCanvas() {
 
     _ctx = _canvas.getContext("2d");
 
-    _canvas.requestFullscreen();
+    // _canvas.requestFullscreen();
 }
 
 function initListener() {
@@ -122,7 +148,7 @@ function initListener() {
         }
 
         // console.log("鼠标按下");
-    });
+    }, true);
 
     document.addEventListener("mouseup", (e) => {
         if (e.button === 2 && Math.abs(e.clientX - _mousePos.x) < 2 && Math.abs(e.clientY - _mousePos.y) < 2) {
@@ -137,7 +163,7 @@ function initListener() {
         // console.log("鼠标抬起");
 
         clearProps();
-    });
+    }, true);
 
     // let count = 5;
     document.addEventListener("mousemove", (e) => {
@@ -147,27 +173,26 @@ function initListener() {
             detectPathShape();
             checkAction();
         }
-    });
+    }, true);
 
     //拖拽开始
     document.addEventListener('dragstart', function (event) {
         _dragData = event.dataTransfer.getData("Files") || event.dataTransfer.getData("text/plain") || event.dataTransfer.getData("text/uri-list");
         // console.log('拖拽开始:', event.dataTransfer.getData("text/uri-list"), event.dataTransfer.getData("text/plain"), event.dataTransfer.getData("Files"));
         _dragStartPoint = { x: event.clientX, y: event.clientY };
-    });
+    }, true);
 
     //拖拽结束
     document.addEventListener('dragend', function (event) {
         // console.log('拖拽结束:', event.target);
         _dragEndPoint = { x: event.clientX, y: event.clientY };
-        doDrag(event);
-    });
-
-    // document.addEventListener("fullscreenchange", () => {
-    //     if (document.fullscreenElement) {
-    //         _canvas.requestFullscreen(); // 让 canvas 也全屏
-    //     }
-    // });
+        const rect = getDragTarget().getBoundingClientRect();
+        if (event.clientY < rect.top || event.clientY > rect.bottom || event.clientX < rect.left || event.clientX > rect.right) {
+            // console.log('拖拽区域超出了当前文档');
+        } else {
+            doDrag(event);
+        }
+    }, true);
 }
 
 function clearProps() {
@@ -314,6 +339,9 @@ function getDragData(input) {
     let drag = null;
     if ((target instanceof Text || target.tagName === "INPUT" || target.tagName === "TEXTAREA")) {
         res = window.getSelection().toString();
+        if (!res) {
+            res = _dragData;
+        }
         if (res.startsWith("http")) {
             drag = "链接";
         } else {
@@ -327,7 +355,7 @@ function getDragData(input) {
         drag = "链接";
         res = target.href;
     } else {
-        if (_dragData.indexOf("http://") === -1) {
+        if (_dragData.indexOf("http") !== -1) {
             drag = "链接"
         } else {
             drag = "文本"

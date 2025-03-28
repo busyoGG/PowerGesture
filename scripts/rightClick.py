@@ -1,23 +1,19 @@
 #!/usr/bin/env python3
-import sys
+import asyncio
+import websockets
 import json
 import subprocess
 import logging
 import requests
-import base64
+import time
 import pillow_avif
-
-from io import BytesIO
-from PIL import Image
-
-# import subprocess
-# import time
-from concurrent.futures import ThreadPoolExecutor
+import io
+import base64
 
 # 设置日志配置
 logging.basicConfig(
-    filename='app.log',         # 日志文件名
-    level=logging.ERROR,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
+    filename='/home/busyo/Dev/PowerGesture/scripts/app.log',         # 日志文件名
+    level=logging.DEBUG,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
     format='%(asctime)s - %(levelname)s - %(message)s',  # 日志格式
 )
 
@@ -45,10 +41,43 @@ def fetch_image(image_url, retries=3):
         logging.info("复制图片到剪贴板")
 
         # 直接将完整的图像复制到剪贴板
+        subprocess.Popen(["wl-copy", "-t", "text/uri-list"], stdin=subprocess.PIPE).communicate(b"file:///tmp/screenshot.png")
+        # with open("/tmp/screenshot.png", "rb") as file:
+        #     subprocess.Popen(["wl-copy", "--type", "image/png"], stdin=file)
+
+        # 打开图片文件
+        # with open("/tmp/screenshot.png", "rb") as file:
+        #     img_data = file.read()
+
+        # image_base64 = base64.b64encode(img_data).decode('utf-8')
+        # mime_data = f"image/png;base64,{image_base64}"
+
         
-        with open("/tmp/screenshot.png", "rb") as file:
-            subprocess.Popen(["wl-copy", "--type", "image/png"], stdin=file)
-        
+
+        # # 使用 BytesIO 创建内存流
+        # img_stream = io.BytesIO(img_data)
+
+        # # 调用 subprocess.Popen，传递 stdin=PIPE
+        # process = subprocess.Popen(
+        #     ["wl-copy", "--type", "image/png"],
+        #     stdin=subprocess.PIPE  # 允许我们通过管道传递数据
+        # )
+
+        # # 将内存流数据写入到 wl-copy 的 stdin
+        # process.stdin.write(img_stream.read())
+        # process.stdin.close()  # 关闭 stdin，结束输入
+
+        # # 等待进程完成
+        # process.wait()
+
+        # 执行 qdbus 命令
+        # subprocess.run([
+        #     "copyq", 
+        #     "write",  
+        #     img_stream,
+        #     "image/png"
+        # ])
+
         logging.debug("完整图像已成功复制到剪贴板")
         return 1
     except Exception as e:
@@ -74,38 +103,35 @@ def send_right_click():
     except subprocess.CalledProcessError as e:
         logging.error(f"执行 ydotool 命令时出错: {e}")
 
-def read_message():
-    """读取 Chrome 发送的消息"""
-    raw_length = sys.stdin.buffer.read(4)
-    if not raw_length:
-        return None
-    message_length = int.from_bytes(raw_length, byteorder="little")
-    message = sys.stdin.buffer.read(message_length).decode("utf-8")
-    return json.loads(message)
+async def handle_message(websocket, path):
+    """处理 WebSocket 消息"""
+    async for message in websocket:
+        try:
+            message = json.loads(message)
+            logging.info(f"接收到消息: {message}")
 
-def send_response(response):
-    """返回响应给 Chrome 插件"""
-    response_json = json.dumps(response)
-    response_length = len(response_json).to_bytes(4, byteorder="little")
-    sys.stdout.buffer.write(response_length)
-    sys.stdout.buffer.write(response_json.encode("utf-8"))
-    sys.stdout.buffer.flush()
+            if message.get("text") == "right_click":
+                send_right_click()
+                await websocket.send(json.dumps({"status": "success"}))
+
+            if message.get("img") is not None:
+                res = fetch_image(message.get("img"))
+                if res is not None:
+                    await websocket.send(json.dumps({'status': 'success'}))
+                else:
+                    await websocket.send(json.dumps({'status': 'error', 'message': 'Failed to fetch image'}))
+            
+            # 如果没有匹配的操作，返回默认状态
+            await websocket.send(json.dumps({"status": "no action"}))
+        except json.JSONDecodeError as e:
+            logging.error(f"消息解析错误: {e}")
+            await websocket.send(json.dumps({'status': 'error', 'message': 'Invalid message format'}))
+
+async def start_server():
+    """启动 WebSocket 服务器"""
+    server = await websockets.serve(handle_message, "localhost", 8765)
+    logging.info("WebSocket 服务器启动，监听端口 8765")
+    await server.wait_closed()
 
 if __name__ == "__main__":
-    while True:
-        message = read_message()
-        logging.info(f"传入信息: {message}")
-        # send_response({"message": message})
-        if message is None:
-            # send_response({"status": "None"})
-            break
-        if message.get("text") == "right_click":
-            send_right_click()
-            send_response({"status": "success"})
-
-        if message.get("img") is not None:
-            res = fetch_image(message.get("img"))
-            if res is not None:
-                send_response({'status': 'success'})
-                
-        send_response({"status": "no action"})
+    asyncio.run(start_server())
