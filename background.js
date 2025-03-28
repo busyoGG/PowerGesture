@@ -1,31 +1,10 @@
 import { actions, drags } from "./scripts/bgActions.js";
 
 const socket = new WebSocket('ws://localhost:8765');
+let retryInterval = 5000; // 每5秒重试一次连接
 
 function init() {
-    // 连接 WebSocket 服务器
-    const socket = new WebSocket('ws://localhost:8765');
-
-    // 打开 WebSocket 连接时，发送一些初始化操作
-    socket.onopen = () => {
-        console.log('WebSocket 连接已建立');
-    };
-
-    // 错误处理
-    socket.onerror = (error) => {
-        console.error('WebSocket 错误:', error);
-    };
-
-    // 监听 WebSocket 消息
-    socket.onmessage = (event) => {
-        const response = JSON.parse(event.data);
-        console.log('收到响应:', response);
-    };
-
-    // WebSocket 连接关闭时的处理
-    socket.onclose = () => {
-        console.log('WebSocket 连接已关闭');
-    };
+    connectToServer();
 
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message?.action === "simulateRightClick") {
@@ -56,6 +35,33 @@ function init() {
 
         return true; // 保持异步响应
     });
+}
+
+function connectToServer() {
+    // 连接 WebSocket 服务器
+    const socket = new WebSocket('ws://localhost:8765');
+
+    // 打开 WebSocket 连接时，发送一些初始化操作
+    socket.onopen = () => {
+        console.log('WebSocket 连接已建立');
+    };
+
+    // 错误处理
+    socket.onerror = (error) => {
+        console.error('WebSocket 错误:', error);
+    };
+
+    // 监听 WebSocket 消息
+    socket.onmessage = (event) => {
+        const response = JSON.parse(event.data);
+        console.log('收到响应:', response);
+    };
+
+    // WebSocket 连接关闭时的处理
+    socket.onclose = () => {
+        console.log('WebSocket 连接已关闭');
+        setTimeout(connectToServer, retryInterval);
+    };
 }
 
 // 通过 WebSocket 发送消息的封装函数
