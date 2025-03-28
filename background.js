@@ -1,6 +1,6 @@
 import { actions, drags } from "./scripts/bgActions.js";
 
-const socket = new WebSocket('ws://localhost:8765');
+let socket = new WebSocket('ws://localhost:8765');
 let retryInterval = 5000; // 每5秒重试一次连接
 
 function init() {
@@ -39,7 +39,7 @@ function init() {
 
 function connectToServer() {
     // 连接 WebSocket 服务器
-    const socket = new WebSocket('ws://localhost:8765');
+    socket = new WebSocket('ws://localhost:8765');
 
     // 打开 WebSocket 连接时，发送一些初始化操作
     socket.onopen = () => {
