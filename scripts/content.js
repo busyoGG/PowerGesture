@@ -162,11 +162,7 @@ function initListener() {
         // console.log('拖拽结束:', event.target);
         _dragEndPoint = { x: event.clientX, y: event.clientY };
         // const rect = getDragTarget().getBoundingClientRect();
-        if (event.clientY < 0 || event.clientY > window.innerHeight || event.clientX < 0 || event.clientX > window.innerWidth) {
-            console.log('拖拽区域超出了当前文档');
-        } else {
-            doDrag(event);
-        }
+        doDrag(event);
     }, true);
 }
 

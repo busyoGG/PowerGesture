@@ -1,10 +1,18 @@
-import { actions, drags } from "./scripts/bgActions.js";
+import { actions, drags, DragData } from "./scripts/bgActions.js";
 
 let socket = new WebSocket('ws://localhost:8765');
 let retryInterval = 5000; // 每5秒重试一次连接
 
 function init() {
     connectToServer();
+
+    chrome.tabs.onCreated.addListener(() => {
+        if (!DragData.actionDone) {
+            DragData.actionReject = true;
+        }
+
+        DragData.actionDone = false;
+    });
 
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message?.action === "simulateRightClick") {
@@ -28,6 +36,7 @@ function init() {
         if (message?.drag) {
             if (drags[message.drag]) {
                 drags[message.drag](message.data);
+                DragData.actionReject = false;
             } else {
                 chrome.tabs.sendMessage(sender.tab.id, message);
             }
