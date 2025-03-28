@@ -7,13 +7,11 @@ import logging
 import requests
 import time
 import pillow_avif
-import io
-import base64
 
 # 设置日志配置
 logging.basicConfig(
     filename='/home/busyo/Dev/PowerGesture/scripts/app.log',         # 日志文件名
-    level=logging.DEBUG,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
+    level=logging.ERROR,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
     format='%(asctime)s - %(levelname)s - %(message)s',  # 日志格式
 )
 
@@ -42,41 +40,6 @@ def fetch_image(image_url, retries=3):
 
         # 直接将完整的图像复制到剪贴板
         subprocess.Popen(["wl-copy", "-t", "text/uri-list"], stdin=subprocess.PIPE).communicate(b"file:///tmp/screenshot.png")
-        # with open("/tmp/screenshot.png", "rb") as file:
-        #     subprocess.Popen(["wl-copy", "--type", "image/png"], stdin=file)
-
-        # 打开图片文件
-        # with open("/tmp/screenshot.png", "rb") as file:
-        #     img_data = file.read()
-
-        # image_base64 = base64.b64encode(img_data).decode('utf-8')
-        # mime_data = f"image/png;base64,{image_base64}"
-
-        
-
-        # # 使用 BytesIO 创建内存流
-        # img_stream = io.BytesIO(img_data)
-
-        # # 调用 subprocess.Popen，传递 stdin=PIPE
-        # process = subprocess.Popen(
-        #     ["wl-copy", "--type", "image/png"],
-        #     stdin=subprocess.PIPE  # 允许我们通过管道传递数据
-        # )
-
-        # # 将内存流数据写入到 wl-copy 的 stdin
-        # process.stdin.write(img_stream.read())
-        # process.stdin.close()  # 关闭 stdin，结束输入
-
-        # # 等待进程完成
-        # process.wait()
-
-        # 执行 qdbus 命令
-        # subprocess.run([
-        #     "copyq", 
-        #     "write",  
-        #     img_stream,
-        #     "image/png"
-        # ])
 
         logging.debug("完整图像已成功复制到剪贴板")
         return 1
