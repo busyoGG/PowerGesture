@@ -7,11 +7,14 @@ import logging
 import requests
 import time
 import pillow_avif
+import psutil
+import os
+import sys
 
 # 设置日志配置
 logging.basicConfig(
     filename='/home/busyo/Dev/PowerGesture/scripts/app.log',         # 日志文件名
-    level=logging.ERROR,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
+    level=logging.CRITICAL,        # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
     format='%(asctime)s - %(levelname)s - %(message)s',  # 日志格式
 )
 
@@ -96,5 +99,37 @@ async def start_server():
     logging.info("WebSocket 服务器启动，监听端口 8765")
     await server.wait_closed()
 
+def is_process_running(script_name):
+    # 获取当前脚本的进程ID
+    current_pid = os.getpid()
+    
+    # 遍历所有运行的进程
+    for proc in psutil.process_iter(attrs=['pid', 'name', 'cmdline']):
+        try:
+            cmdline = proc.info.get('cmdline')
+            # 检查进程是否是目标脚本
+            if cmdline:
+                # logging.info(f"脚本 {cmdline} {proc.info['pid']} {current_pid} {cmdline and any(script_name in arg for arg in cmdline)}")
+                if any(script_name in arg for arg in cmdline) and proc.info['pid'] != current_pid:
+                    # 如果找到了，并且进程不是当前进程，返回该进程
+                    logging.info(f"脚本 {cmdline}")
+                    return proc
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+    return None
+
+def terminate_previous_process(proc):
+    # 杀死进程
+    proc.terminate()
+    logging.info(f"杀死进程的 PID {proc.info['pid']}")
+
 if __name__ == "__main__":
+    script_name = os.path.basename(sys.argv[0])  # 获取当前脚本文件名
+    previous_process = is_process_running(script_name)
+    if previous_process:
+        logging.info(f"发现 {script_name}")
+        terminate_previous_process(previous_process)
+    else:
+        logging.info(f"未发现 {script_name}")
+
     asyncio.run(start_server())
