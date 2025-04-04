@@ -44,7 +44,9 @@ var _actSettings = {
         "重新打开关闭的标签"
     ],
     "上下": [],
-    "下上": []
+    "下上": [
+        "关闭当前标签"
+    ]
 }
 
 var _dragStartPoint;

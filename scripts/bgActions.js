@@ -3,8 +3,13 @@ export const actions = {
         chrome.sessions.restore();
     },
     "关闭当前标签": () => {
-        chrome.tabs.getCurrent((tab) => {
-            chrome.tabs.remove(tab.id);
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            if (tabs.length > 0) {
+                // console.log("当前 Tab ID:", tabs[0].id);
+                chrome.tabs.remove(tabs[0].id);
+            } else {
+                console.log("未找到活动的 Tab");
+            }
         });
     },
 }
