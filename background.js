@@ -1,109 +1,100 @@
-import { actions, drags, DragData } from "./scripts/bgActions.js";
+// import { actions, drags, DragData } from "./scripts/bgActions.js";
 
-let socket = new WebSocket('ws://localhost:8765');
-let retryInterval = 5000; // 每5秒重试一次连接
+let socket = new WebSocket('ws://127.0.0.1:8765');
+let retryInterval = 5000;
+const { actions, drags } = self.bgActions;
 
-let status = "";
+// let status = "";
 
 function init() {
     connectToServer();
 
-    chrome.tabs.onCreated.addListener(() => {
-        if (status === "dragStart") {
+    // browser.tabs.onCreated.addListener(() => {
+    //     if (status === "dragStart") {
+    //         if (!DragData.actionDone) {
+    //             DragData.actionReject = true;
+    //         }
+    //         DragData.actionDone = false;
+    //     }
+    //     status = "";
+    // });
 
-            if (!DragData.actionDone) {
-                DragData.actionReject = true;
-            }
+    browser.runtime.onMessage.addListener((message, sender) => {
+        // if (message?.status) {
+        //     status = message.status;
+        // }
 
-            DragData.actionDone = false;
-        }
-
-        status = "";
-    });
-
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-
-        if (message?.status) {
-            status = message.status;
-        }
-
-        if (message?.action === "simulateRightClick") {
-            // 发送右键点击消息
-            sendWebSocketMessage({ text: "right_click" }, sendResponse);
-        }
+        // if (message?.action === "simulateRightClick") {
+        //     return sendWebSocketMessage({ text: "right_click" });
+        // }
 
         if (message?.img) {
-            // 发送图片消息
-            sendWebSocketMessage({ img: message.img }, sendResponse);
+            return sendWebSocketMessage({ img: message.img });
         }
 
         if (message?.command) {
             if (actions[message.command]) {
                 actions[message.command]();
-            } else {
-                chrome.tabs.sendMessage(sender.tab.id, message);
+            } else if (sender.tab?.id) {
+                browser.tabs.sendMessage(sender.tab.id, message);
             }
         }
+
+        // if (message?.cmd) {
+        //     return sendWebSocketMessage({ command: message.cmd });
+        // }
 
         if (message?.drag) {
             if (drags[message.drag]) {
                 drags[message.drag](message.data);
-                DragData.actionReject = false;
-            } else {
-                chrome.tabs.sendMessage(sender.tab.id, message);
+                // DragData.actionReject = false;
+            } else if (sender.tab?.id) {
+                browser.tabs.sendMessage(sender.tab.id, message);
             }
         }
 
-        return true; // 保持异步响应
+        return Promise.resolve(true); // 保持异步响应
     });
 }
 
 function connectToServer() {
-    // 连接 WebSocket 服务器
     socket = new WebSocket('ws://localhost:8765');
 
-    // 打开 WebSocket 连接时，发送一些初始化操作
     socket.onopen = () => {
-        console.log('WebSocket 连接已建立');
+        console.log('WebSocket connected');
     };
 
-    // 错误处理
     socket.onerror = (error) => {
-        console.error('WebSocket 错误:', error);
+        console.error('WebSocket error:', error);
     };
 
-    // 监听 WebSocket 消息
     socket.onmessage = (event) => {
         const response = JSON.parse(event.data);
-        console.log('收到响应:', response);
+        console.log('Received:', response);
     };
 
-    // WebSocket 连接关闭时的处理
     socket.onclose = () => {
-        console.log('WebSocket 连接已关闭');
+        console.log('WebSocket closed, retrying...');
         setTimeout(connectToServer, retryInterval);
     };
 }
 
-// 通过 WebSocket 发送消息的封装函数
-function sendWebSocketMessage(message, callback) {
-    if (socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify(message));
-        console.log('发送消息:', message);
-        // 等待响应
-        socket.onmessage = (event) => {
-            const response = JSON.parse(event.data);
-            console.log('收到响应:', response);
-            if (response.status === 'success') {
-                callback && callback(true);
-            } else {
-                callback && callback(false);
-            }
-        };
-    } else {
-        console.error('WebSocket 连接未打开');
-        callback && callback(false);
-    }
+function sendWebSocketMessage(message) {
+    return new Promise((resolve) => {
+        if (socket.readyState === WebSocket.OPEN) {
+            socket.send(JSON.stringify(message));
+            console.log('Sent:', message);
+
+            socket.onmessage = (event) => {
+                const response = JSON.parse(event.data);
+                console.log('Response:', response);
+                resolve(response.status === 'success');
+            };
+        } else {
+            console.error('WebSocket not open');
+            resolve(false);
+        }
+    });
 }
 
 init();

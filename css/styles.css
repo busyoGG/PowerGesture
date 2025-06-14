@@ -23,3 +23,7 @@
     padding: 4px;
     z-index: 999999;
 }
+
+.no-events {
+    pointer-events: none !important;
+}

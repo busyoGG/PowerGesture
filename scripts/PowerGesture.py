@@ -69,26 +69,52 @@ def send_right_click():
     except subprocess.CalledProcessError as e:
         logging.error(f"执行 ydotool 命令时出错: {e}")
 
-async def handle_message(websocket, path):
-    """处理 WebSocket 消息"""
+def send_command(keys):
+    logging.debug("按下快捷键")
+    try:
+        command = "ydotool key"
+
+        for key in keys:
+            command += " " + key + ":1"
+
+        for key in keys:
+            command += " " + key + ":0"
+
+        result = subprocess.run(
+            ["fish", "-c", command],
+            check=True,
+            capture_output=True,   # 捕获输出
+            text=True              # 输出文本格式（而不是字节）
+        )
+        # 打印命令执行的标准输出
+        logging.info(f"ydotool 执行结果: {result.stdout}")
+        # 如果有标准错误，可以记录错误信息
+        if result.stderr:
+            logging.error(f"ydotool 错误信息: {result.stderr}")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"执行 ydotool 命令时出错: {e}")
+
+async def handle_message(websocket):
     async for message in websocket:
         try:
             message = json.loads(message)
             logging.info(f"接收到消息: {message}")
-
-            if message.get("text") == "right_click":
-                send_right_click()
-                await websocket.send(json.dumps({"status": "success"}))
-
+            
+            # if message.get("text") == "right_click":
+            #     send_right_click()
+            #     await websocket.send(json.dumps({"status": "success"}))
+            # elif message.get("command") is not None:
+            #     send_command(message.get("command"))
+            #     await websocket.send(json.dumps({"status": "success"}))
+            # elif message.get("img") is not None:
             if message.get("img") is not None:
                 res = fetch_image(message.get("img"))
                 if res is not None:
                     await websocket.send(json.dumps({'status': 'success'}))
                 else:
                     await websocket.send(json.dumps({'status': 'error', 'message': 'Failed to fetch image'}))
-            
-            # 如果没有匹配的操作，返回默认状态
-            await websocket.send(json.dumps({"status": "no action"}))
+            else:
+                await websocket.send(json.dumps({"status": "no action"}))
         except json.JSONDecodeError as e:
             logging.error(f"消息解析错误: {e}")
             await websocket.send(json.dumps({'status': 'error', 'message': 'Invalid message format'}))

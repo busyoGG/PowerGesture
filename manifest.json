@@ -1,7 +1,7 @@
 {
+    "manifest_version": 2,
     "name": "PowerGesture",
     "version": "1.0",
-    "manifest_version": 3,
     "description": "鼠标手势",
     "permissions": [
         "tabs",
@@ -11,18 +11,20 @@
         "search",
         "downloads"
     ],
-    "host_permissions": [
-        "<all_urls>"
-    ],
     "background": {
-        "service_worker": "background.js",
-        "type": "module"
+        "scripts": [
+            "scripts/bgActions.js",
+            "background.js"
+        ]
     },
     "content_scripts": [
         {
             "matches": [
                 "<all_urls>"
             ],
+            "match_about_blank": true,
+            "match_origin_as_fallback": true,
+            "all_frames": true,
             "css": [
                 "css/styles.css"
             ],
@@ -31,5 +33,11 @@
                 "scripts/fgActions.js"
             ]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "powergesture@example.com",
+            "strict_min_version": "91.0"
+        }
+    }
 }
