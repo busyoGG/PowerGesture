@@ -1,4 +1,4 @@
-# 自用 Linux KDE Wayland 下 Chrome 鼠标手势解决方案
+# 自用 Linux KDE Wayland 下 Firefox 鼠标手势解决方案
 
 ## 简介
 
