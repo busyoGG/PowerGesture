@@ -3,6 +3,9 @@
     "name": "PowerGesture",
     "version": "1.0",
     "description": "鼠标手势",
+    "icons": {
+        "128": "icon.png"
+    },
     "permissions": [
         "tabs",
         "storage",

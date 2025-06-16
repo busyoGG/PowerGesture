@@ -409,7 +409,7 @@ async function getDragData(input) {
     }
 
     let datas = await Promise.all(stringPromises);
-    console.log(datas);
+    // console.log(datas);
 
     let drag;
     if (datas && datas.length > 0) {
@@ -417,7 +417,7 @@ async function getDragData(input) {
             // console.log('拖拽类型：', type, '内容：', str);
             let match = str.match(/https?:\/\/.+\.(png|jpe?g|gif|webp|bmp|svg|avif)/i)
             if (!type.includes("html") && match) {
-                console.log('拖拽类型：图片链接，地址:', match[0]);
+                // console.log('拖拽类型：图片链接，地址:', match[0]);
                 // copyImageFromUrl(str);
                 drag = "图片";
                 res = match[0];
@@ -428,7 +428,12 @@ async function getDragData(input) {
                 res = str;
             } else if ((!res || res == "") && type === "text/plain") {
                 // console.log('检测到文本:', str);
-                drag = "文本";
+                // if()
+                if (isURL(str)) {
+                    drag = "链接";
+                } else {
+                    drag = "文本";
+                }
                 res = str;
             }
         }
@@ -438,6 +443,11 @@ async function getDragData(input) {
 
     // return { drag: _dragSettings[dir][drag], data: res };
     return { drag: drag, data: res };
+}
+
+function isURL(text) {
+    const urlRegex = /^(https?:\/\/)?([\w\-]+\.)+[a-z]{2,6}(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$/i;
+    return urlRegex.test(text.trim());
 }
 
 init();
